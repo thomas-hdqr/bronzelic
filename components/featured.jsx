@@ -1,9 +1,9 @@
 import React from 'react'
 
-function featured() {
+function Featured() {
   return (
     <div>featured</div>
   )
 }
 
-export default featured
+export default Featured

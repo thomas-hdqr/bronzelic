@@ -1,9 +1,9 @@
 import React from 'react'
 
-function aboutUs() {
+function AboutUs() {
   return (
     <div>aboutUs</div>
   )
 }
 
-export default aboutUs
+export default AboutUs

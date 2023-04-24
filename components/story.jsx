@@ -1,9 +1,9 @@
 import React from 'react'
 
-function story() {
+function Story() {
   return (
     <div>story</div>
   )
 }
 
-export default story
+export default Story

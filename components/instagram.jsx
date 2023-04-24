@@ -1,9 +1,9 @@
 import React from 'react'
 
-function instagram() {
+function Instagram() {
   return (
     <div>instagram</div>
   )
 }
 
-export default instagram
+export default Instagram

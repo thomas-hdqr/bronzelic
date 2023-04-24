@@ -2,9 +2,20 @@ import React from 'react'
 
 function Header() {
   return (
-    <div className="">
-      <h1 className='text-4xl text-terracotta'>Header</h1>
-      <p className=''>Why</p>
+    <div className="uppercase">
+      <div>
+        <p>shop</p>
+        <p>about us</p>
+        <p>journal</p>
+        <p>free size kit</p>
+      </div>
+      <div>
+        <h1>bronzelic</h1>
+      </div>
+      <div>
+        <p>reviews</p>
+        <p>appointments</p>
+      </div>
     </div>
   )
 }

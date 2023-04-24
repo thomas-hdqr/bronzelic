@@ -8,6 +8,7 @@ import BookAppointment from '../../components/bookAppointment.jsx';
 import Instagram from '../../components/instagram.jsx';
 import Subscribe from '../../components/subscribe.jsx';
 import Footer from '../../components/footer.jsx';
+import Hero from '../../components/hero.jsx';
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <div className=''>
         <Header />
+        <Hero/>
         <CarrouselMain/>
         <AboutUs/>
         <Story/>

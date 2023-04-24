@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../../components/Header.jsx';
 import CarrouselMain from '../../components/CarrouselMain.jsx';
 import AboutUs from '../../components/aboutUs.jsx';

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <div className="uppercase">
+    <div className="uppercase top-0 sticky w-full z-50">
       <div>
         <p>shop</p>
         <p>about us</p>

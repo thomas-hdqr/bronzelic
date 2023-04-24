@@ -2,7 +2,7 @@ import React from 'react'
 
 function Featured() {
   return (
-    <div>featured</div>
+    <div>Featured</div>
   )
 }
 

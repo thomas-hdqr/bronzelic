@@ -17,11 +17,11 @@ function HeroSection() {
 
   return (
 
-    <div className="h-screen bg-cover bg-center flex items-end justify-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className="relative h-screen bg-cover bg-center flex items-end justify-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
   
       {/* 1st element */}
-      <div className="flex flex-col items-center justify-center gap-y-4">
-        <h1 className="text-4xl text-white text-center">Your Hero nope</h1>
+      <div className="relative content-center items-center justify-center gap-y-4">
+        <h1 className="text-6xl text-white text-center">Your Hero nope</h1>
         <p className="text-lg text-white text-center">Your Hero nope</p>
       </div>
 
@@ -33,11 +33,11 @@ function HeroSection() {
           onMouseEnter={() => handleMouseEnter('/image-2.jpg')}
           onMouseLeave={handleMouseLeave}
         >
-          <div className='flex flex-col items-center justify-center gap-y-14'>
-            <h3>Wedding Rings</h3>
-            <div className='w-full h-20 relative'>
-              <Image src="/hammered_wedding.avif" alt="" width={400} height={400} className='w-full h-full object-contain' />
-            </div>
+          <div className='flex flex-col items-center justify-center'>
+              <h3>Wedding Rings</h3>
+              <div className='w-full h-20 relative'>
+                <Image src="/hammered_wedding.avif" alt="" width={400} height={400} className='w-full h-full object-contain' />
+              </div>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ function HeroSection() {
           onMouseEnter={() => handleMouseEnter('/image-4.jpg')}
           onMouseLeave={handleMouseLeave}
         >
-          <div className='flex flex-col items-center justify-center gap-y-14'>
+          <div className='flex flex-col items-center justify-center'>
             <h3>Engagement Rings</h3>
             <div className='w-full h-20 relative'>
               <Image src="/eternity_solitaire_engagement.webp" alt="" width={400} height={400} className='w-full h-full object-contain' />

@@ -14,8 +14,7 @@ import Footer from '../../components/footer.jsx';
 
 export default function Home() {
   return (
-    <div>
-      <main>
+    <div className=''>
         <Header />
         <CarrouselMain/>
         <AboutUs/>
@@ -26,7 +25,6 @@ export default function Home() {
         <Instagram/>
         <Subscribe/>
         <Footer/>
-      </main>
     </div>
   )
 }

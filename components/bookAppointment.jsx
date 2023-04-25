@@ -14,7 +14,7 @@ function BookAppointment() {
         <div>
           <p>book a virtual or in-person appointment</p>
         </div>
-        <div className="bg-[#59552D] text-xs text-white py-4 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
+        <div className="bg-[#59552D] text-xs text-white py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
           book appointment
         </div>
       </div>

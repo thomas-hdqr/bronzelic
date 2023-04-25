@@ -22,11 +22,21 @@ function CarrouselMain() {
 
 
 
-      <div className="w-full grid-cols-3 gap-x-2.5">
+      <div className="w-full grid grid-cols-3 gap-x-2.5 pt-40">
 
 
         <div className="w-full relative ">
-          <div className='w-full flex flex-col items-center justify-center gap-y-2.5 px-5'>
+          <div className='w-full grid items-center justify-center gap-y-2.5 px-5'>
+            <p className="uppercase text-xs">engagement rings</p>
+          </div>
+        </div>
+        <div className="w-full relative ">
+          <div className='w-full grid items-center justify-center gap-y-2.5 px-5'>
+            <p className="uppercase text-xs">engagement rings</p>
+          </div>
+        </div>
+        <div className="w-full relative ">
+          <div className='w-full grid items-center justify-center gap-y-2.5 px-5'>
             <p className="uppercase text-xs">engagement rings</p>
           </div>
         </div>

@@ -9,7 +9,10 @@ module.exports = {
       colors: {
         'main': '#59552D',
         'second': '#E2DCBE',
-      }
+      },
+      fontFamily: {
+        'noto': ['Noto Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],

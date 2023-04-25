@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap');
+
+
 h1, h2, h3, h4 {
     font-family: 'Syne', sans-serif;
 }

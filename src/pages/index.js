@@ -9,6 +9,7 @@ import Instagram from '../../components/Instagram.jsx';
 import Subscribe from '../../components/Subscribe.jsx';
 import Footer from '../../components/Footer.jsx';
 import HeroSection from '../../components/HeroSection.jsx';
+import Marquee from '../../components/Marquee.jsx';
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Reviews/>
         <BookAppointment/>
         <Instagram/>
+        <Marquee/>
         <Subscribe/>
         <Footer/>
     </div>

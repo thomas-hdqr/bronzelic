@@ -1,6 +1,13 @@
 import Image from 'next/image'
+import { useState } from 'react';
 
 function CarrouselMain() {
+
+  const [hovered, setHovered] = useState(null);
+
+  const image1 = hovered === 'ring1' ? '/square_bezel_engagement.webp' : '/engagement.webp';
+  const image2 = hovered === 'ring2' ? '/full_eternity_diamond_bands.webp' : '/diamond.webp';
+  const image3 = hovered === 'ring3' ? '/domed_solid_bands.webp' : '/solidband.webp';
 
   
   return (
@@ -23,13 +30,17 @@ function CarrouselMain() {
       <div className="w-full grid grid-cols-3 gap-x-2.5 py-40">
 
 
-        <div className="w-full relative ">
+        <div 
+          className="w-full relative"
+          onMouseEnter={() => setHovered('ring1')}
+          onMouseLeave={() => setHovered(null)}
+        >
           <div className='w-full grid items-center justify-center gap-y-2.5 px-5'>
             <div className=''>
               <p className="uppercase text-xs text-main text-center py-2">engagement rings</p>
             </div> 
             <div className='border-y border-[#59552D] py-4'>
-              <Image src="/engagement.webp" alt="engagement rings" width={500} height={500} />
+              <Image src={image1} alt="engagement rings" width={500} height={500} />
             </div>
             <div className="bg-[#59552D] uppercase text-center text-xs text-white py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
               get started
@@ -38,13 +49,17 @@ function CarrouselMain() {
         </div>
 
 
-        <div className="w-full relative ">
+        <div 
+          className="w-full relative"
+          onMouseEnter={() => setHovered('ring2')}
+          onMouseLeave={() => setHovered(null)}
+        >
           <div className='w-full grid items-center justify-center gap-y-2.5 px-5'>
             <div className=''>
               <p className="uppercase text-xs text-main text-center py-2">diamond bands</p>
             </div> 
             <div className='border-y border-[#59552D] py-4'>
-              <Image src="/engagement.webp" alt="engagement rings" width={500} height={500} />
+              <Image src={image2} alt="engagement rings" width={500} height={500} />
             </div>
             <div className="bg-[#59552D] uppercase text-center text-xs text-white py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
               get started
@@ -53,13 +68,17 @@ function CarrouselMain() {
         </div>
 
 
-        <div className="w-full relative ">
+        <div 
+          className="w-full relative"
+          onMouseEnter={() => setHovered('ring3')}
+          onMouseLeave={() => setHovered(null)}
+        >
           <div className='w-full grid items-center justify-center gap-y-2.5 px-5'>
             <div className=''>
               <p className="uppercase text-xs text-main text-center py-2">solid bands</p>
             </div> 
             <div className='border-y border-[#59552D] py-4'>
-              <Image src="/engagement.webp" alt="engagement rings" width={500} height={500} />
+              <Image src={image3} alt="engagement rings" width={500} height={500} />
             </div>
             <div className="bg-[#59552D] uppercase text-center text-xs text-white py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
               get started

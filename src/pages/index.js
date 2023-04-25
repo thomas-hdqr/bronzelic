@@ -12,10 +12,9 @@ import HeroSection from '../../components/HeroSection.jsx';
 
 
 
-
 export default function Home() {
   return (
-    <div className=''>
+    <div>
         <Header />
         <HeroSection/>
         <CarrouselMain/>

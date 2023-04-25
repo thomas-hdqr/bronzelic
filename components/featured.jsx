@@ -3,7 +3,7 @@ import React from 'react'
 
 function Featured() {
   return (
-    <div className="bg-[#b0a38b] py-10">
+    <div className="bg-[#b0a38b] py-14">
       <div>
         <p className="text-[#59552D] uppercase text-center text-xs">as featured in</p>
       </div>

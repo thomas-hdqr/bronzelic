@@ -6,7 +6,7 @@ function Story() {
 
     <div>
 
-      <div className='py-20 px-10 grid grid-cols-2 items-center justify-center'>
+      <div className='py-40 px-10 grid grid-cols-2 items-center justify-center'>
 
         <div className='bg-[#868156] text-[#E2DCBE] py-32 px-20 space-y-5 h-auto'>
           <p className='text-xs uppercase'>DESIGNER QUALITY WITHOUT THE MARKUP</p>

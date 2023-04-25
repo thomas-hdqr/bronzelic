@@ -20,13 +20,19 @@ function HeroSection() {
     <div className="relative h-screen bg-cover bg-center flex items-end justify-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
   
       {/* 1st element */}
-      <div className="relative content-center items-center justify-center gap-y-4">
-        <h1 className="text-6xl text-white text-center">Your Hero nope</h1>
-        <p className="text-lg text-white text-center">Your Hero nope</p>
+      <div className="absolute inset-0 flex flex-col content-center items-center justify-center">
+        <div className='flex row align-baseline space-x-3'>
+          <p className="text-lg text-main align-baseline uppercase">custom rings</p>
+          <p className="text-3xl text-main align-baseline italic font-medium">made just for you</p>
+        </div>
+        <div className="bg-[#F9DCBB] text-xs text-main mt-5 py-4 px-6 inline-block transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:border-[#59552D] cursor-pointer">
+          SHOP NEW ARRIVALS
+        </div>
+
       </div>
 
       {/* 2nd element */}
-      <div className='border-white w-full grid grid-cols-2 border-t h-[225px] text-white'>
+      <div className='absolute border-white w-full grid grid-cols-2 border-t h-[225px] text-white'>
 
         <div
           className='border-r border-white relative w-full flex items-start justify-center gap-x-4 cursor-pointer'

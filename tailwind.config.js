@@ -14,8 +14,8 @@ module.exports = {
         'noto': ['Noto Sans', 'sans-serif'],
       },
       animation: {
-        marquee: 'marquee 10s linear infinite',
-        marquee2: 'marquee2 10s linear infinite',
+        marquee: 'marquee 15s linear infinite',
+        marquee2: 'marquee2 15s linear infinite',
       },
       keyframes: {
         marquee: {

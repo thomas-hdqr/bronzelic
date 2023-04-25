@@ -1,8 +1,29 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Story() {
   return (
-    <div>story</div>
+
+    <div>
+
+      <div className='py-20 px-10 grid grid-cols-2 items-center justify-center'>
+
+        <div className='bg-[#59552D] text-[#E2DCBE] py-32 px-10 space-y-5 h-auto'>
+          <p className='text-xs uppercase'>DESIGNER QUALITY WITHOUT THE MARKUP</p>
+          <p className='text-2xl'>By partnering with <i>local</i> workshops and delivering rings <i>directly</i> to your doorstep, we’re able to offer <i>custom-made</i> rings at a <i>fraction of the price</i> of traditional designer rings.</p>
+          <p className='text-md'>Our partner workshops have over 75+ years of combined experience working with top designer brands like Tiffany & Co. and Harry Winston.</p>
+        </div>
+
+        <div className='w-full justify-center px-10'>
+          <Image src={'/image-3.webp'} alt="" width={500} height={500} objectFit='contain'/>
+        </div>
+
+        </div>
+
+    </div>
+
+
+
   )
 }
 

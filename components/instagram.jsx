@@ -22,9 +22,8 @@ const images = [
 function Instagram() {
   
   const [sliderRef] = useKeenSlider({
-    spacing: 15,
-    slidesPerView: 2,
     loop: true,
+    slidesPerView: 3,
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,9 +1,11 @@
-import { React, useState } from 'react'
+import { React, useState, useRef } from 'react'
 import Image from 'next/image'
 import { 
   ArrowLeftIcon,
   ArrowRightIcon,
  } from '@heroicons/react/24/outline'
+import { useKeenSlider } from 'keen-slider/react';
+import 'keen-slider/keen-slider.min.css';
 
 const images = [
   '/insta1.jpeg',
@@ -16,7 +18,14 @@ const images = [
   '/insta8.webp',
 ];
 
+
 function Instagram() {
+  
+  const [sliderRef] = useKeenSlider({
+    spacing: 15,
+    slidesPerView: 2,
+    loop: true,
+  });
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -56,23 +65,16 @@ function Instagram() {
 
 
      {/* #2nd part */}
-      <div className="relative w-full flex justify-center items-center">
-      <div className="w-1/2 flex scrollbar-none overflow-x-auto py-10 cursor-grab">
-        <div
-          className="flex transition-all duration-300"
-          style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
-          }}
-        >
-          {images.map((image, index) => (
-            <div className="w-96 h-96" key={index}>
-              <Image src={image} alt={`Slide ${index}`} className='object-cover w-96 h-96' fill />
+     <div className="p-10">
+      <div className="keen-slider" ref={sliderRef}>
+        {images.map((image, index) => (
+          <div className="keen-slider__slide" key={index}>
+            <div className="w-96 h-96 relative">
+              <Image src={image} alt={`Slide ${index}`} layout="fill" objectFit="cover" />
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-
-      
     </div>
 
     </div>

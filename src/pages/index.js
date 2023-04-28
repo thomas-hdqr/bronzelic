@@ -12,7 +12,6 @@ import HeroSection from '../../components/HeroSection.jsx';
 import Marquee from '../../components/Marquee.jsx';
 
 
-
 export default function Home() {
   return (
     <div>

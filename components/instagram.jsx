@@ -18,7 +18,6 @@ const images = [
   '/insta8.webp',
 ];
 
-
 function Instagram() {
   
   const [sliderRef] = useKeenSlider({

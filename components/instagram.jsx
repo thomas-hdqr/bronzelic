@@ -1,5 +1,9 @@
 import { React, useState } from 'react'
 import Image from 'next/image'
+import { 
+  ArrowLeftIcon,
+  ArrowRightIcon,
+ } from '@heroicons/react/24/outline'
 
 const images = [
   '/insta1.jpeg',
@@ -32,19 +36,24 @@ function Instagram() {
           <p className="inline-block">instagram</p>
           <p className="inline-block">@bronzelic</p>
         </div>
-        <div className="w-full flex justify-end">
-          <p className="inline-block">@bronzelic</p>
+        <div className="w-full flex justify-end space-x-8">
+          <ArrowLeftIcon
+            className='h-5 cursor-pointer'
+            onClick={handlePrev} 
+          />
+          <p className="">
+             {currentIndex + 1} of {images.length}
+          </p>
+          <ArrowRightIcon
+            className='h-5 cursor-pointer'
+            onClick={handleNext} 
+          />
         </div>
       </div>
 
 
       <div className="relative w-full flex justify-center items-center">
-      <button
-        className="absolute left-0 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 focus:outline-none"
-        onClick={handlePrev}
-      >
-        &larr;
-      </button>
+
 
       <div className="w-1/2 flex scrollbar-none overflow-x-auto py-10 cursor-grab">
         <div
@@ -61,12 +70,7 @@ function Instagram() {
         </div>
       </div>
 
-      <button
-        className="absolute right-0 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 focus:outline-none"
-        onClick={handleNext}
-      >
-        &rarr;
-      </button>
+      
     </div>
 
     </div>

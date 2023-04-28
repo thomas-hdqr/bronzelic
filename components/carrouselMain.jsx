@@ -39,7 +39,7 @@ function CarrouselMain() {
             <div className=''>
               <p className="uppercase text-xs text-main text-center pb-2">engagement rings</p>
             </div> 
-            <div className='border-y border-[#59552D] py-4 w-80 h-80 relative'>
+            <div className='border-y border-[#59552D] py-4 w-96 h-96 relative'>
               <Image src={image1} alt="engagement rings" layout="fill" objectFit="cover" className="object-cover py-4" />
             </div>
             <div className="bg-[#59552D] uppercase text-center text-xs text-white py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
@@ -58,7 +58,7 @@ function CarrouselMain() {
             <div className=''>
               <p className="uppercase text-xs text-main text-center pb-2">diamond bands</p>
             </div> 
-            <div className='border-y border-[#59552D] py-4 w-80 h-80 relative'>
+            <div className='border-y border-[#59552D] py-4 w-96 h-96 relative'>
               <Image src={image2} alt="engagement rings"fill className="object-cover py-4" />
             </div>
             <div className="bg-[#59552D] uppercase text-center text-xs text-white py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
@@ -77,7 +77,7 @@ function CarrouselMain() {
             <div className=''>
               <p className="uppercase text-xs text-main text-center pb-2">solid bands</p>
             </div> 
-            <div className='border-y border-[#59552D] py-4 w-80 h-80 relative'>
+            <div className='border-y border-[#59552D] py-4 w-96 h-96 relative'>
               <Image src={image3} alt="engagement rings" fill className="object-cover py-4" />
             </div>
             <div className="bg-[#59552D] uppercase text-center text-xs text-white py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">

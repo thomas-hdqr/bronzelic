@@ -31,6 +31,8 @@ function Instagram() {
   return (
     <div className="p-10">
 
+
+      {/* #1st part */}
       <div className="relative w-full uppercase text-main text-xs">
         <div className="absolute left-0 space-x-40">
           <p className="inline-block">instagram</p>
@@ -52,9 +54,9 @@ function Instagram() {
       </div>
 
 
+
+     {/* #2nd part */}
       <div className="relative w-full flex justify-center items-center">
-
-
       <div className="w-1/2 flex scrollbar-none overflow-x-auto py-10 cursor-grab">
         <div
           className="flex transition-all duration-300"

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Subscribe() {
   return (
-    <div className='flex flex-row gap-x-10 m-10 p-6 border-y border-main'>
+    <div className='flex flex-row gap-x-10 m-10 p-4 border-y border-main'>
       <div className=''>
         <p className='text-main text-2xl font-noto italic'>Stay in Touch</p>
       </div>

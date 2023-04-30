@@ -2,16 +2,16 @@ import React from 'react'
 
 function Subscribe() {
   return (
-    <div>
-      <div>
-        <p>Stay in Touch</p>
+    <div className='flex flex-row gap-x-10 m-10 p-6 border-y border-main'>
+      <div className=''>
+        <p className='text-main text-2xl font-noto italic'>Stay in Touch</p>
       </div>
-      <div>
+      <div className='flex-1'>
         <form>
-          <input type="text" placeholder='Your Email Adress'/>
+          <input className='text-main text-xl' type="text" placeholder='Your Email Adress'/>
         </form>
       </div>
-      <div className="bg-[#59552D] uppercase text-xs text-white py-5 px-10 transition duration-200 ease-in cursor-pointer">
+      <div className="bg-[#59552D] uppercase text-xs text-white py-6 px-16 transition duration-200 ease-in cursor-pointer">
           enter
       </div>
     </div>

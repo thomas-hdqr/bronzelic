@@ -1,4 +1,4 @@
-import { React, useState, useRef } from 'react'
+import { React, useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 import { 
   ArrowLeftIcon,
@@ -7,36 +7,52 @@ import {
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
-const images = [
-  '/insta1.jpeg',
-  '/insta2.webp',
-  '/insta3.webp',
-  '/insta4.jpeg',
-  '/insta5.jpeg',
-  '/insta6.jpeg',
-  '/insta7.jpeg',
-  '/insta8.webp',
-];
 
 function Instagram() {
-  
-  const [sliderRef] = useKeenSlider({
-    loop: true,
-    slidesPerView: 3,
-  });
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [totalSlides, setTotalSlides] = useState(0);
+
+  const [sliderRef] = useKeenSlider({
+    mode: 'free-snap',
+    slides: {
+      perView: 2.5,
+      spacing: 15,
+    },
+    slideChanged(s) {
+      setCurrentSlide(s.relativeSlide);
+    },
+  });
+  
+  
+  
+
+  useEffect(() => {
+    if (sliderRef.current) {
+      setTotalSlides(sliderRef.current.details().size);
+    }
+  }, [sliderRef]);
+  
+  
+  
+  
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    if (sliderRef.current) {
+      sliderRef.current.prev();
+    }
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    if (sliderRef.current) {
+      sliderRef.current.next();
+    }
   };
+  
+  
 
   return (
-    <div className="p-10">
+    <div className="px-10 py-20">
 
 
       {/* #1st part */}
@@ -48,14 +64,14 @@ function Instagram() {
         <div className="w-full flex justify-end space-x-8">
           <ArrowLeftIcon
             className='h-5 cursor-pointer'
-            onClick={handlePrev} 
+            onClick={handlePrev}
           />
           <p className="">
-             {currentIndex + 1} of {images.length}
+            {currentSlide + 1} of {totalSlides}
           </p>
           <ArrowRightIcon
             className='h-5 cursor-pointer'
-            onClick={handleNext} 
+            onClick={handleNext}
           />
         </div>
       </div>
@@ -63,15 +79,32 @@ function Instagram() {
 
 
      {/* #2nd part */}
-     <div className="p-10">
-      <div className="keen-slider" ref={sliderRef}>
-        {images.map((image, index) => (
-          <div className="keen-slider__slide" key={index}>
-            <div className="w-96 h-96 relative">
-              <Image src={image} alt={`Slide ${index}`} layout="fill" objectFit="cover" />
+     <div className="py-10">
+      <div className="keen-slider space-x-20" ref={sliderRef}>
+            <div className="w-96 h-96 relative keen-slider__slide number-slide1">
+              <Image src="/insta1.jpeg" alt="" layout="fill" objectFit="cover" />
             </div>
-          </div>
-        ))}
+            <div className="w-96 h-96 relative keen-slider__slide number-slide2">
+              <Image src="/insta2.webp" alt="" layout="fill" objectFit="cover" />
+            </div>
+            <div className="w-96 h-96 relative keen-slider__slide number-slide3">
+              <Image src="/insta3.webp" alt="" layout="fill" objectFit="cover" />
+            </div>
+            <div className="w-96 h-96 relative keen-slider__slide number-slide4">
+              <Image src="/insta4.jpeg" alt="" layout="fill" objectFit="cover" />
+            </div>
+            <div className="w-96 h-96 relative keen-slider__slide number-slide5">
+              <Image src="/insta5.jpeg" alt="" layout="fill" objectFit="cover" />
+            </div>
+            <div className="w-96 h-96 relative keen-slider__slide number-slide6">
+              <Image src="/insta6.jpeg" alt="" layout="fill" objectFit="cover" />
+            </div>
+            <div className="w-96 h-96 relative keen-slider__slide number-slide7">
+              <Image src="/insta7.jpeg" alt="" layout="fill" objectFit="cover" />
+            </div>
+            <div className="w-96 h-96 relative keen-slider__slide number-slide8">
+              <Image src="/insta8.webp" alt="" layout="fill" objectFit="cover" />
+            </div>
       </div>
     </div>
 

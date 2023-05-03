@@ -4,7 +4,7 @@ import React from 'react'
 function BookAppointment() {
   return (
     <div>
-      <div className="bg-[#F9DCBB] m-10 py-20 flex flex-row items-center justify-center space-x-10 uppercase text-main">
+      <div className="bg-[#F9DCBB] mx-10 my-32 py-20 flex flex-row items-center justify-center space-x-10 uppercase text-main">
         <div>
           <p>need help deciding?</p>
         </div>

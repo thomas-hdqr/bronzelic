@@ -53,7 +53,7 @@ export default function Reviews() {
         </div>
       </div>
 
-      <div ref={sliderRef} className="keen-slider text-6xl text-main px-10">
+      <div ref={sliderRef} className="keen-slider text-2xl sm:text-6xl text-main sm:px-10">
         <div className="keen-slider__slide number-slide1 space-y-5">
           <p className='italic'>"As soon as the ring arrived and I opened the box, I knew I had chosen a kick-ass ring."</p>
           <p className='uppercase text-xs'>seth.p</p>

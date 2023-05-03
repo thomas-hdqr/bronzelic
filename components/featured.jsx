@@ -7,7 +7,7 @@ function Featured() {
       <div>
         <p className="text-[#59552D] uppercase text-center text-xs">as featured in</p>
       </div>
-      <div className='flex px-40 py-10 gap-x-24'>
+      <div className='sm:flex px-40 py-10 gap-x-24'>
         <div className='width-[110px] mx-auto'>
           <Image src="/vogue.webp" alt="" width={110} height={200} />
         </div>

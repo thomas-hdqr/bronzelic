@@ -14,14 +14,15 @@ function CarrouselMain() {
 
     <div className='p-10'>
 
-    <div className="relative w-full uppercase text-main text-xs">
-      <div className="absolute left-0">
-        <p className="inline-block">custom made just for you</p>
-      </div>
-      <div className="w-full  sm:flex justify-center">
-        <p className="inline-block">select a ring style to begin customizing</p>
-      </div>
-    </div>
+<div className="relative w-full uppercase text-main text-xs px-4 sm:px-0 text-center">
+  <div className="sm:absolute left-0 top-0">
+    <p className="sm:inline-block">custom made just for you</p>
+  </div>
+  <div className="w-full text-center sm:flex sm:justify-center mt-4 sm:mt-0">
+    <p className="sm:inline-block">select a ring style to begin customizing</p>
+  </div>
+</div>
+
 
 
 

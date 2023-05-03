@@ -1,7 +1,8 @@
 // ./components/Header.js
 import { useState, useEffect } from 'react';
-import { MagnifyingGlassIcon,
-  ShoppingBagIcon
+import { 
+  MagnifyingGlassIcon,
+  ShoppingBagIcon,
 } from '@heroicons/react/24/outline'
 
 const Header = () => {

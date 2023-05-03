@@ -10,8 +10,6 @@ import 'keen-slider/keen-slider.min.css';
 
 function Instagram() {
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [totalSlides, setTotalSlides] = useState(0);
 
   const [sliderRef] = useKeenSlider({
     mode: 'free-snap',
@@ -19,40 +17,12 @@ function Instagram() {
       perView: 2.5,
       spacing: 15,
     },
-    slideChanged(s) {
-      setCurrentSlide(s.relativeSlide);
-    },
   });
-  
-  
-  
 
-  useEffect(() => {
-    if (sliderRef.current) {
-      setTotalSlides(sliderRef.current.details().size);
-    }
-  }, [sliderRef]);
-  
-  
-  
-  
-
-  const handlePrev = () => {
-    if (sliderRef.current) {
-      sliderRef.current.prev();
-    }
-  };
-
-  const handleNext = () => {
-    if (sliderRef.current) {
-      sliderRef.current.next();
-    }
-  };
-  
   
 
   return (
-    <div className="px-10 py-20">
+    <div className="px-10 py-20 space-y-5">
 
 
       {/* #1st part */}
@@ -60,19 +30,6 @@ function Instagram() {
         <div className="absolute left-0 space-x-40">
           <p className="inline-block">instagram</p>
           <p className="inline-block">@bronzelic</p>
-        </div>
-        <div className="w-full flex justify-end space-x-8">
-          <ArrowLeftIcon
-            className='h-5 cursor-pointer'
-            onClick={handlePrev}
-          />
-          <p className="">
-            {currentSlide + 1} of {totalSlides}
-          </p>
-          <ArrowRightIcon
-            className='h-5 cursor-pointer'
-            onClick={handleNext}
-          />
         </div>
       </div>
 

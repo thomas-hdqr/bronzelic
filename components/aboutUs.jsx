@@ -12,7 +12,7 @@ function AboutUs() {
                 <p>our values</p>
               </div>
             </div>
-            <div className='grid grid-cols-12 py-12 text-2xl'>
+            <div className='sm:grid sm:grid-cols-12 py-12 sm:text-2xl text-lg'>
               <div className='col-span-6'>
                 <p>Designed for your <br /><i>tomorrows</i></p>
               </div>

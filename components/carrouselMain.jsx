@@ -18,7 +18,7 @@ function CarrouselMain() {
       <div className="absolute left-0">
         <p className="inline-block">custom made just for you</p>
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full  sm:flex justify-center">
         <p className="inline-block">select a ring style to begin customizing</p>
       </div>
     </div>
@@ -27,11 +27,11 @@ function CarrouselMain() {
 
 
 
-      <div className="w-full grid grid-cols-3 gap-x-2.5 py-32">
+      <div className="w-full sm:grid sm:grid-cols-3 gap-x-2.5 py-32">
 
 
         <div 
-          className="w-full relative hover:border hover:border-[#59552D] transition duration-400 ease-in py-4"
+          className="w-full relative sm:hover:border hover:border-[#59552D] transition duration-400 ease-in py-4"
           onMouseEnter={() => setHovered('ring1')}
           onMouseLeave={() => setHovered(null)}
         >
@@ -50,11 +50,11 @@ function CarrouselMain() {
 
 
         <div 
-          className="w-full relative hover:border hover:border-[#59552D] transition duration-400 ease-in py-4"
+          className="sm:w-full relative sm:hover:border hover:border-[#59552D] transition duration-400 ease-in py-4"
           onMouseEnter={() => setHovered('ring2')}
           onMouseLeave={() => setHovered(null)}
         >
-          <div className='w-full grid items-center justify-center gap-y-2.5 px-5'>
+          <div className='sm:w-full grid items-center justify-center gap-y-2.5 px-5'>
             <div className=''>
               <p className="uppercase text-xs text-main text-center pb-2">diamond bands</p>
             </div> 
@@ -69,7 +69,7 @@ function CarrouselMain() {
 
 
         <div 
-          className="w-full relative hover:border hover:border-[#59552D] transition duration-400 ease-in py-4"
+          className="w-full relative sm:hover:border hover:border-[#59552D] transition duration-400 ease-in py-4"
           onMouseEnter={() => setHovered('ring3')}
           onMouseLeave={() => setHovered(null)}
         >

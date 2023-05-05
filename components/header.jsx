@@ -7,11 +7,15 @@ import {
 } from '@heroicons/react/24/outline'
 import { Cross as Hamburger } from 'hamburger-react'
 
-
 const Header = () => {
 
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setOpen] = useState(false);
+
+  const handleItemClick = () => {
+    setOpen(false);
+  };
+
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -70,28 +74,22 @@ const Header = () => {
     scrolled ? 'bg-white' : 'bg-transparent'
   }`}
 >
-<Hamburger onToggle={toggled => {
-  if (toggled) {
-    <div
-    className={`${isOpen ? 'flex' : 'hidden'} fixed inset-0 bg-black`}
-  >
-    <div className="flex flex-col justify-center items-center h-full space-y-6 text-white">
-      <div>test</div>
-      <div>test</div>
-      <div>test</div>
-      <div>test</div>
-    </div>
-  </div>
-     // open a menu
-  } else {
-     // close a menu
-  }
-}} />
-  <div>
-    <h1>bronzelic</h1>
-  </div>
 
+        <Hamburger toggled={isOpen} toggle={setOpen} />
+        {isOpen && (
+          <div className="absolute bg-white p-4">
+            <ul>
+              <li onClick={handleItemClick}>Item 1</li>
+              <li onClick={handleItemClick}>Item 2</li>
+              <li onClick={handleItemClick}>Item 3</li>
+              <li onClick={handleItemClick}>Item 4</li>
+            </ul>
+          </div>
+        )}
 </div>
+
+
+
 
 
 

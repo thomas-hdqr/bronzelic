@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { 
   MagnifyingGlassIcon,
   ShoppingBagIcon,
-  Bars2Icon,
-  XMarkIcon,
+  ChevronRightIcon,
 } from '@heroicons/react/24/outline'
 import { Cross as Hamburger } from 'hamburger-react'
 
@@ -63,17 +62,32 @@ const Header = () => {
       </header>
 
 
-{/* Responsive version */}
-<div
-  className={`sm:hidden flex fixed w-full z-50 py-4 transition-all duration-300 ease-in-out items-center h-14 ${
-    scrolled ? 'bg-white' : 'bg-transparent'
-  }`}
->
-  <div className="w-5 cursor-pointer">
-    <Hamburger color="white" toggled={toggle} toggle={setToggle} />
-  </div>
-</div>
-
+      {/* Responsive version */}
+      <div
+        className={`sm:hidden flex fixed w-full z-50 p-4 transition-all duration-300 ease-in-out items-center h-14 ${
+          scrolled ? 'bg-white' : 'bg-transparent'
+        }`}
+      >
+        <div className="w-5 cursor-pointer">
+          <Hamburger color="black" toggled={toggle} toggle={setToggle} />
+        </div>
+      </div>
+      {toggle && (
+        <div className="fixed top-0 left-0 w-full h-full z-40 bg-[#868159]">
+          {/* Add your menu items here */}
+          <ul className="px-8 pt-20 text-white text-2xl space-y-2 uppercase">
+            <li onClick={() => setToggle(false)} className="cursor-pointer hover:underline flex flex-row gap-x-4">shop <ChevronRightIcon className='h-8'/></li>
+            <li onClick={() => setToggle(false)} className="cursor-pointer hover:underline flex flex-row gap-x-4">about us <ChevronRightIcon className='h-8'/></li>
+            <li onClick={() => setToggle(false)} className="cursor-pointer hover:underline flex flex-row gap-x-4">journal <ChevronRightIcon className='h-8'/></li>
+            <li onClick={() => setToggle(false)} className="cursor-pointer hover:underline">free size kit</li>
+            <li onClick={() => setToggle(false)} className='pt-8 cursor-pointer hover:underline'>reviews</li>
+            <li onClick={() => setToggle(false)} className="cursor-pointer hover:underline">appointments</li>
+            <li onClick={() => setToggle(false)} className='flex flex-row gap-x-4 cursor-pointer hover:underline'>Search <MagnifyingGlassIcon className='h-8'/></li>
+            <li onClick={() => setToggle(false)} className='flex flex-row gap-x-4 cursor-pointer hover:underline'>Bag <ShoppingBagIcon className='h-8'/></li>
+          </ul>
+        </div>
+      )}
+    
 
 
 

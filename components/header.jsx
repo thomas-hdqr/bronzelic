@@ -64,14 +64,24 @@ const Header = () => {
 
       {/* Responsive version */}
       <div
-        className={`sm:hidden flex fixed w-full z-50 p-4 transition-all duration-300 ease-in-out items-center h-14 ${
-          scrolled ? 'bg-white' : 'bg-transparent'
-        }`}
-      >
-        <div className="w-5 cursor-pointer">
-          <Hamburger color="black" toggled={toggle} toggle={setToggle} />
-        </div>
-      </div>
+  className={`sm:hidden flex fixed w-full z-50 p-4 transition-all duration-300 ease-in-out items-center h-14 ${
+    scrolled ? 'bg-white' : 'bg-transparent'
+  }`}
+>
+  <div className="flex flex-grow justify-start items-center">
+    <div className="w-5 cursor-pointer">
+      <Hamburger color="black" toggled={toggle} toggle={setToggle} />
+    </div>
+  </div>
+  <div className="flex-grow flex justify-center items-center">
+    <h1 className="text-2xl font-bold uppercase cursor-pointer">bronzelic</h1>
+  </div>
+  <div className="flex flex-grow justify-end items-center space-x-4">
+    <MagnifyingGlassIcon className="h-5 cursor-pointer" />
+    <ShoppingBagIcon className="h-5 cursor-pointer" />
+  </div>
+</div>
+
       {toggle && (
         <div className="fixed top-0 left-0 w-full h-full z-40 bg-[#868159]">
           {/* Add your menu items here */}

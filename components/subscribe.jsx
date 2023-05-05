@@ -20,15 +20,15 @@ function Subscribe() {
       </div>
 
       {/* Responsive version */}
-      <div className='sm:hidden items-center m-2 p-4 border-b-main text-xl'>
+      <div className='sm:hidden items-center m-2 p-4 border border-b-main text-xl'>
         
           <div>
             <p className='text-main font-noto italic text-center pb-5'>Stay in Touch</p>
           </div>
 
-          <div className='border border-main py-2  px-3 flex flex-row space-x-4 text-main font-light text-md'>
+          <div className='border border-main px-3 flex flex-row space-x-4 text-main font-light'>
             <input type="email" placeholder="Your Email Adress" />
-            <div className='border-l border-main text-center'>SUBMIT</div>
+            <div className='py-4 border-l border-main pl-4'>SUBMIT</div>
           </div>
       </div>
 

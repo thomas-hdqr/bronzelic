@@ -20,8 +20,8 @@ function Subscribe() {
       </div>
 
       {/* Responsive version */}
-      <div className='sm:hidden items-center m-2 p-4 border border-b-main text-xl'>
-        
+      <div className='sm:hidden items-center m-2 p-4 border-b border-main text-xl'>
+
           <div>
             <p className='text-main font-noto italic text-center pb-5'>Stay in Touch</p>
           </div>
@@ -31,6 +31,8 @@ function Subscribe() {
             <div className='py-4 border-l border-main pl-4'>SUBMIT</div>
           </div>
       </div>
+
+
 
 
     </div>

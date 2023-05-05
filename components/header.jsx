@@ -10,12 +10,7 @@ import { Cross as Hamburger } from 'hamburger-react'
 const Header = () => {
 
   const [scrolled, setScrolled] = useState(false);
-  const [isOpen, setOpen] = useState(false);
-
-  const handleItemClick = () => {
-    setOpen(false);
-  };
-
+  const [toggle, setToggle] = useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -74,18 +69,9 @@ const Header = () => {
     scrolled ? 'bg-white' : 'bg-transparent'
   }`}
 >
-
-        <Hamburger toggled={isOpen} toggle={setOpen} />
-        {isOpen && (
-          <div className="absolute bg-white p-4">
-            <ul>
-              <li onClick={handleItemClick}>Item 1</li>
-              <li onClick={handleItemClick}>Item 2</li>
-              <li onClick={handleItemClick}>Item 3</li>
-              <li onClick={handleItemClick}>Item 4</li>
-            </ul>
-          </div>
-        )}
+  <div className="w-5 cursor-pointer">
+    <Hamburger color="white" toggled={toggle} toggle={setToggle} />
+  </div>
 </div>
 
 

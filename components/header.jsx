@@ -5,12 +5,13 @@ import {
   Bars2Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import Image from 'next/image';
+import { Cross as Hamburger } from 'hamburger-react'
+
 
 const Header = () => {
 
   const [scrolled, setScrolled] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -63,27 +64,36 @@ const Header = () => {
       </header>
 
 
-      {/* Responsive version */}
-      <div
-        className={`sm:hidden flex fixed w-full z-50 py-4 transition-all duration-300 ease-in-out items-center h-14 ${
-          scrolled ? 'bg-white' : 'bg-transparent'
-        }`}
-      >
-          <div 
-          src={toggle ? <XMarkIcon/> : <Bars2Icon/>}
-          alt="menu"
-          className="w-5"
-          onClick={() => setToggle((prev) => !prev)} 
-          >
-          </div>
-          <div className=
-          {`${toggle ? 'flex' : 'hidden' } p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-2xl bg-white shadow-lg bg-opacity-30 bg-clip-padding backdrop-blur-sm`}>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-            <div>test</div>
-          </div>
-      </div>
+{/* Responsive version */}
+<div
+  className={`sm:hidden flex fixed w-full z-50 py-4 transition-all duration-300 ease-in-out items-center h-14 ${
+    scrolled ? 'bg-white' : 'bg-transparent'
+  }`}
+>
+<Hamburger onToggle={toggled => {
+  if (toggled) {
+    <div
+    className={`${isOpen ? 'flex' : 'hidden'} fixed inset-0 bg-black`}
+  >
+    <div className="flex flex-col justify-center items-center h-full space-y-6 text-white">
+      <div>test</div>
+      <div>test</div>
+      <div>test</div>
+      <div>test</div>
+    </div>
+  </div>
+     // open a menu
+  } else {
+     // close a menu
+  }
+}} />
+  <div>
+    <h1>bronzelic</h1>
+  </div>
+
+</div>
+
+
 
     </div>
 

@@ -1,4 +1,3 @@
-// ./components/Header.js
 import { useState, useEffect } from 'react';
 import { 
   MagnifyingGlassIcon,

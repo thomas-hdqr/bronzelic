@@ -8,38 +8,38 @@ function Footer() {
       <div className="grid grid-cols-5 uppercase text-xs text-main pb-16">
         <div>
           <p className="text-[#59552e9c] pb-4">give us a ring</p>
-          <p className="cursor-pointer">help@bronzelic</p>
-          <p className="cursor-pointer">912.273.2632</p>
-          <p className="cursor-pointer">23 5 ave New york</p>
+          <p className="cursor-pointer hover:underline">help@bronzelic</p>
+          <p className="cursor-pointer hover:underline">912.273.2632</p>
+          <p className="cursor-pointer hover:underline">23 5 ave New york</p>
         </div>
         <div>
           <p className="text-[#59552e9c] pb-4">about</p>
-          <p className="cursor-pointer">about us</p>
-          <p className="cursor-pointer">custom & bespoke</p>
-          <p className="cursor-pointer">reviews</p>
-          <p className="cursor-pointer">sustainability</p>
-          <p className="cursor-pointer">journal</p>
+          <p className="cursor-pointer hover:underline">about us</p>
+          <p className="cursor-pointer hover:underline">custom & bespoke</p>
+          <p className="cursor-pointer hover:underline">reviews</p>
+          <p className="cursor-pointer hover:underline">sustainability</p>
+          <p className="cursor-pointer hover:underline">journal</p>
         </div>
         <div>
           <p className="text-[#59552e9c] pb-4">help</p>
-          <p className="cursor-pointer">faq</p>
-          <p className="cursor-pointer">lifetime guarantee</p>
-          <p className="cursor-pointer">shipping & returns</p>
-          <p className="cursor-pointer">contact</p>
-          <p className="cursor-pointer">my account</p>
-          <p className="cursor-pointer">free size kit</p>
+          <p className="cursor-pointer hover:underline">faq</p>
+          <p className="cursor-pointer hover:underline">lifetime guarantee</p>
+          <p className="cursor-pointer hover:underline">shipping & returns</p>
+          <p className="cursor-pointer hover:underline">contact</p>
+          <p className="cursor-pointer hover:underline">my account</p>
+          <p className="cursor-pointer hover:underline">free size kit</p>
         </div>
         <div>
           <p className="text-[#59552e9c] pb-4">social</p>
-          <p className="cursor-pointer">instagram</p>
-          <p className="cursor-pointer">facebook</p>
-          <p className="cursor-pointer">pinterest</p>
-          <p className="cursor-pointer">tik tok</p>
+          <p className="cursor-pointer hover:underline">instagram</p>
+          <p className="cursor-pointer hover:underline">facebook</p>
+          <p className="cursor-pointer hover:underline">pinterest</p>
+          <p className="cursor-pointer hover:underline">tik tok</p>
         </div>
         <div>
           <p className="text-[#59552e9c] pb-4">privacy</p>
-          <p className="cursor-pointer">terms and privacy</p>
-          <p className="cursor-pointer">do not sell my info</p>
+          <p className="cursor-pointer hover:underline">terms and privacy</p>
+          <p className="cursor-pointer hover:underline">do not sell my info</p>
         </div>
       </div>
 

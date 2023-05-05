@@ -1,23 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 function Marquee() {
   return (
-      <div class="relative flex overflow-x-hidden uppercase text-6xl text-main py-40">
-        <div class="py-12 animate-marquee whitespace-nowrap">
-          <span class="mx-4">Free returns & exchanges</span>
-          <span class="mx-4">💍</span>
-          <span class="mx-4">Complimentary resizing for life</span>
-          <span class="mx-4">💍</span>
-        </div>
-
-        <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-          <span class="mx-4">Free returns & exchanges</span>
-          <span class="mx-4">💍</span>
-          <span class="mx-4">Complimentary resizing for life</span>
-          <span class="mx-4">💍</span>
-        </div>
+    <div className="relative overflow-x-hidden uppercase text-4xl sm:text-6xl text-main py-40">
+      <div className="flex space-x-4 animate-marquee whitespace-nowrap">
+        <div className="inline-block">Free returns & exchanges</div>
+        <div className="inline-block">💍</div>
+        <div className="inline-block">Complimentary resizing for life</div>
+        <div className="inline-block">💍</div>
+        <div className="inline-block">Free returns & exchanges</div>
+        <div className="inline-block">💍</div>
+        <div className="inline-block">Complimentary resizing for life</div>
+        <div className="inline-block">💍</div>
       </div>
-  )
+    </div>
+  );
 }
 
-export default Marquee
+export default Marquee;

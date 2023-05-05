@@ -9,8 +9,8 @@ function Footer() {
         <div>
           <p className="text-[#59552e9c] pb-4">give us a ring</p>
           <p className="cursor-pointer hover:underline">help@bronzelic</p>
-          <p className="cursor-pointer hover:underline">912.273.2632</p>
-          <p className="cursor-pointer hover:underline">23 5 ave New york</p>
+          <p className="">912.273.2632</p>
+          <p className="">23 5 ave New york</p>
         </div>
         <div>
           <p className="text-[#59552e9c] pb-4">about</p>

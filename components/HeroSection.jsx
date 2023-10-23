@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image'
-
+import Link from 'next/link';
+import {Categorie} from 'src/pages/categorie.js'
 
 
 function HeroSection() {
@@ -53,10 +54,12 @@ function HeroSection() {
           onMouseLeave={handleMouseLeave}
         >
           <div className='flex flex-col items-center justify-center'>
+            <Link href='./categorie'>
             <h3>Engagement Rings</h3>
             <div className='w-full h-20 relative'>
               <Image src="/eternity_solitaire_engagement.webp" alt="" width={400} height={400} className='w-full h-full object-contain' />
             </div>
+            </Link>
           </div>
         </div>
 

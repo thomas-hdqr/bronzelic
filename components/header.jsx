@@ -5,6 +5,7 @@ import {
   ChevronRightIcon,
 } from '@heroicons/react/24/outline'
 import { Cross as Hamburger } from 'hamburger-react'
+import Link from 'next/link';
 
 const Header = () => {
 
@@ -47,9 +48,11 @@ const Header = () => {
               <p>journal</p>
               <p>free size kit</p>
             </div>
-            <div className={`text-2xl font-bold cursor-pointer ${scrolled ? 'text-main' : 'text-white'}`}>
-              <h1>bronzelic</h1>
-            </div>
+            <Link href="/">
+              <div className={`text-2xl font-bold cursor-pointer ${scrolled ? 'text-main' : 'text-white'}`}>
+                <h1>bronzelic</h1>
+              </div>
+            </Link>
             {/* Navigation items */}
             <div className={`flex items-center justify-between gap-x-5 cursor-pointer text-xs ${scrolled ? 'text-main' : 'text-white'}`}>
               <p>reviews</p>

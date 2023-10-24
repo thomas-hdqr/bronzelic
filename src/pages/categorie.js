@@ -1,14 +1,15 @@
-import React from 'react'
 import Header from '../../components/Header.jsx';
 
 
-function Categorie() {
+
+export default function Categorie() {
   return (
-    <div className='bg-red-800'>
-       <p>test</p>
+    <div>
+      <Header/>
+      <div className="absolute top-0 left-0 w-full h-full object-cover" style={{ backgroundImage: `url(/collection_banner.jpeg)` }}>
+       <p className='text-[180px]'>test</p>
        <h1>sdfvsfvesf</h1>
+    </div>
     </div>
   )
 }
-
-export default Categorie

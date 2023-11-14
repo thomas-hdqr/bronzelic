@@ -7,7 +7,7 @@ function CollectionItem({ imageUrl, title, price }) {
         <Image src={imageUrl} alt="title" fill className="object-cover py-4" />
       </div>
       <div className="flex flex-col">
-        <div className="">
+        <div className="flex flex-col">
           <p className="uppercase text-xs text-main text-left pb-2">{title}</p>
           <p className="uppercase text-xs text-main text-left pb-2">{price}$</p>
         </div>

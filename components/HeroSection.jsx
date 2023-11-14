@@ -26,9 +26,11 @@ function HeroSection() {
           <p className="text-sm text-main align-baseline uppercase">custom rings</p>
           <p className="text-2xl text-main align-baseline font-noto italic">made just for you</p>
         </div>
+        <Link href="/categorie">
         <div className="bg-[#F9DCBB] text-xs text-main mt-5 py-4 px-10 inline-block transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:border-[#59552D] cursor-pointer">
           SHOP NEW ARRIVALS
         </div>
+        </Link>
 
       </div>
 
@@ -40,12 +42,14 @@ function HeroSection() {
           onMouseEnter={() => handleMouseEnter('/image-2.jpg')}
           onMouseLeave={handleMouseLeave}
         >
+          <Link href="/categorie">
           <div className='flex flex-col items-center justify-center'>
             <h3>Wedding Rings</h3>
             <div className='w-full h-20 relative'>
               <Image src="/hammered_wedding.avif" alt="" width={400} height={400} className='w-full h-full object-contain' />
             </div>
           </div>
+        </Link>
         </div>
 
         <div
@@ -54,7 +58,7 @@ function HeroSection() {
           onMouseLeave={handleMouseLeave}
         >
           <div className='flex flex-col items-center justify-center'>
-            <Link href='./categorie'>
+            <Link href='/categorie'>
             <h3>Engagement Rings</h3>
             <div className='w-full h-20 relative'>
               <Image src="/eternity_solitaire_engagement.webp" alt="" width={400} height={400} className='w-full h-full object-contain' />

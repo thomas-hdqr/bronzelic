@@ -4,7 +4,7 @@ import Link from "next/link";
 function CollectionItem({ imageUrl, title, price }) {
   return (
     <div className="sm:w-full grid items-center justify-center gap-y-3.5 py-14 px-5">
-      <div className="border-y border-[#59552D] py-4 w-96 h-96 relative">
+      <div className="border-b border-[#59552D] py-4 w-96 h-96 relative">
         <Image src={imageUrl} alt="title" fill className="object-cover py-4" />
       </div>
       <div className="">

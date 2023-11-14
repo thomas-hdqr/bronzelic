@@ -1,10 +1,12 @@
 import Image from "next/image";
 
-function CollectionItem({ imageUrl, title, price }) {
+function CollectionItem({ imageUrl, hoverImageUrl, title, price }) {
   return (
     <div className="sm:hover:border hover:border-[#59552D] transition duration-400 ease-in sm:w-full   grid items-center justify-center gap-y-3.5 my-14 p-2">
       <div className="border-b border-[#59552D] py-4 w-96 h-96 relative">
         <Image src={imageUrl} alt="title" fill className="object-cover py-4" />
+        <Image src={hoverImageUrl} alt={title + ' on hover'} fill className="object-cover py-4 absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out" />
+
       </div>
 
       <div className="flex justify-between items-start w-full">

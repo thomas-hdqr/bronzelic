@@ -8,7 +8,7 @@ export default function Categorie() {
 
 
   const items = [
-    { imageUrl: '/full_eternity_diamond_bands.webp', title: 'Ring 1', price: '500' },
+    { imageUrl: '/full_eternity_diamond_bands.webp', hoverImageUrl: '/full_eternity_diamond_bands.webp', title: 'Ring 1', price: '500' },
     { imageUrl: '/full_eternity_diamond_bands.webp', title: 'Ring 1', price: '500' },
     { imageUrl: '/full_eternity_diamond_bands.webp', title: 'Ring 1', price: '500' },
     { imageUrl: '/full_eternity_diamond_bands.webp', title: 'Ring 1', price: '500' },

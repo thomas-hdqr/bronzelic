@@ -2,7 +2,7 @@ import Header from "../../components/Header.jsx";
 import Subscribe from "../../components/Subscribe.jsx";
 import Footer from "../../components/Footer.jsx";
 import Marquee from "../../components/Marquee.jsx";
-import CollectionItem from "../../components/CollectionItem";
+import CollectionItem from "../../components/CollectionItem.jsx";
 
 export default function Categorie() {
   

@@ -5,7 +5,7 @@ import Marquee from "../../components/Marquee.jsx";
 import CollectionItem from "../../components/CollectionItem";
 
 export default function Categorie() {
-
+  
 
   const items = [
     { imageUrl: '/Domed_Solitaire_Round_Std_1.5mm_YG_Mirror_1.5ct.jpg', hoverImageUrl: '/Domed-Solitaire_02.jpg', title: 'the domed solitaire', price: '799' },

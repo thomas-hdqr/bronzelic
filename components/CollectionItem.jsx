@@ -13,7 +13,16 @@ function CollectionItem({ imageUrl, title, price }) {
         </div>
         <div className="flex items-center gap-x-3">
           <button className="w-[21px] h-[21px] rounded-full relative duration-300 transition-colors border-black border flex items-center justify-center hover:border-opacity-20 border-opacity-0">
-            <div className="w-[15px] h-[15px] rounded-full bg-yellow-700"></div>
+            <div className="w-[15px] h-[15px] rounded-full bg-[#ffe6aa]"></div>
+          </button>
+          <button className="w-[21px] h-[21px] rounded-full relative duration-300 transition-colors border-black border flex items-center justify-center hover:border-opacity-20 border-opacity-0">
+            <div className="w-[15px] h-[15px] rounded-full bg-[#ebebeb]"></div>
+          </button>
+          <button className="w-[21px] h-[21px] rounded-full relative duration-300 transition-colors border-black border flex items-center justify-center hover:border-opacity-20 border-opacity-0">
+            <div className="w-[15px] h-[15px] rounded-full bg-[#ffd2be]"></div>
+          </button>
+          <button className="w-[21px] h-[21px] rounded-full relative duration-300 transition-colors border-black border flex items-center justify-center hover:border-opacity-20 border-opacity-0">
+            <div className="w-[15px] h-[15px] rounded-full bg-[#d2d2d2]"></div>
           </button>
         </div>
       </div>

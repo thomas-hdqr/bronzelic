@@ -36,7 +36,7 @@ export default function Categorie() {
         <h1 className="w-full h-[477px] relative flex items-center justify-center text-center px-10 uppercase text-[2.5rem] text-white">Shop all rings</h1>
       </div>
       <div className="container mx-auto p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {items.map((item, index) => (
           <CollectionItem key={index} {...item} />
         ))}

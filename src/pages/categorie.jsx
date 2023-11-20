@@ -128,9 +128,6 @@ export default function Categorie() {
         </h1>
       </div>
 
-<div><h1 className="text-xl text-red-800">qsdfqsfd</h1></div>
-      
-
       <div className="container mx-auto p-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {items.map((item, index) => (

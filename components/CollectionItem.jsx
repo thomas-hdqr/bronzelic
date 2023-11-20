@@ -1,18 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
-function CollectionItem({ imageUrl, hoverImageUrl, title, price }) {
+function CollectionItem({ imageUrl, hoverImageUrl, title, price, sizes }) {
   return (
     <Link href="./product">
       <div className="sm:hover:border hover:border-[#59552D] transition duration-400 ease-in sm:w-full grid items-center justify-center gap-y-3.5 my-14 p-2 hover:cursor-pointer">
         <div className="border-b border-[#59552D] py-4 w-96 h-[500px] relative">
           <Image
+            sizes={sizes}
             src={imageUrl}
             alt="title"
             fill
             className="object-cover py-4"
           />
           <Image
+            sizes={sizes}
             src={hoverImageUrl}
             alt={title + " on hover"}
             fill

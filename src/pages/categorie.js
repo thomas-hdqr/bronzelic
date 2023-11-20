@@ -120,10 +120,10 @@ export default function Categorie() {
       <Header />
 
       <div
-        className="relative h-screen bg-cover bg-center flex items-end justify-center"
+        className="relative h-[477px] bg-cover bg-center flex items-end justify-center"
         style={{ backgroundImage: `url(/collection_banner.jpeg)` }}
       >
-        <h1 className="absolute inset-0 flex flex-col content-center items-center justify-center uppercase text-[120px] text-white">
+        <h1 className="absolute inset-0 flex flex-col content-center items-center justify-center uppercase text-5xl text-white">
           Shop all rings
         </h1>
       </div>

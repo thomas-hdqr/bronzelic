@@ -7,12 +7,25 @@ import BookAppointment from "../../components/BookAppointment.jsx";
 export default function Product() {
   return (
     <div>
-        <Header/>
-        <BookAppointment/>
-        <Marquee/>
-        <Subscribe/>
-        <Footer/>
-    </div>
-  )
-}
+      <Header />
 
+      <div className="bg-red-200 h-screen grid sm:grid-cols-3">
+        <div className="bg-blue-100 border border-[#59552D]">
+          <div className="rounded-full ">
+            <p>1</p>
+          </div>
+            <p>Customize yours</p>
+        </div>
+        <div className="bg-yellow-100"></div>
+        <div className="bg-green-100"></div>
+      </div>
+      <div className="w-40 h-40 rounded-full  
+                inline-flex items-center justify-center  
+                bg-white text-gray-700 text-xl font-bold">test</div>
+      <BookAppointment />
+      <Marquee />
+      <Subscribe />
+      <Footer />
+    </div>
+  );
+}

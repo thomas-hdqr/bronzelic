@@ -12,6 +12,12 @@ const Header = ( {isSpecialPage} ) => {
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
 
+  const headerClass = `hidden sm:flex fixed w-full z-50 py-4 transition-all duration-300 ease-in-out items-center h-14 ${
+    isSpecialPage ? 'bg-red-400 text-main border-1 border-main' : (scrolled ? 'bg-white' : 'bg-transparent')
+  }`;
+
+  const textClass = isSpecialPage ? 'text-main' : (scrolled ? 'text-main' : 'text-white');
+
   const handleScroll = () => {
     const offset = window.scrollY;
     if (offset > 150) {
@@ -34,9 +40,7 @@ const Header = ( {isSpecialPage} ) => {
 
 
       {/* Desktop version */}
-      <header className={`hidden sm:flex fixed w-full z-50 py-4 transition-all duration-300 ease-in-out items-center h-14 ${
-          isSpecialPage ? 'bg-white text-black' : (scrolled ? 'bg-white' : 'bg-transparent')
-        }`}>
+      <header className={headerClass}>
         {/* Header content here */}
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center uppercase">

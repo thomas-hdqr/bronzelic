@@ -9,7 +9,7 @@ export default function Product() {
     <div>
       <Header />
 
-      <div className="bg-red-200 h-screen grid sm:grid-cols-3">
+      <div className="pt-32 h-screen grid sm:grid-cols-3">
         <div className="bg-blue-100 border border-[#59552D]">
           <div className="rounded-full ">
             <p>1</p>

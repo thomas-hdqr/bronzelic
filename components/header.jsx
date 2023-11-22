@@ -7,7 +7,7 @@ import {
 import { Cross as Hamburger } from 'hamburger-react'
 import Link from 'next/link';
 
-const Header = () => {
+const Header = ( {isSpecialPage} ) => {
 
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
@@ -34,11 +34,9 @@ const Header = () => {
 
 
       {/* Desktop version */}
-      <header
-        className={`hidden sm:flex fixed w-full z-50 py-4 transition-all duration-300 ease-in-out items-center h-14 ${
-          scrolled ? 'bg-white' : 'bg-transparent'
-        }`}
-      >
+      <header className={`hidden sm:flex fixed w-full z-50 py-4 transition-all duration-300 ease-in-out items-center h-14 ${
+          isSpecialPage ? 'bg-white text-black' : (scrolled ? 'bg-white' : 'bg-transparent')
+        }`}>
         {/* Header content here */}
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center uppercase">

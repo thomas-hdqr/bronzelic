@@ -7,7 +7,7 @@ import BookAppointment from "../../components/BookAppointment.jsx";
 export default function Product() {
   return (
     <div>
-      <Header />
+      <Header isSpecialPage={true}/>
 
       <div className="pt-32 h-screen grid sm:grid-cols-3">
         <div className="bg-blue-100 border border-[#59552D]">

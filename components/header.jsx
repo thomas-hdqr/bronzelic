@@ -16,7 +16,7 @@ const Header = ({ isSpecialPage }) => {
   }`;
 
   const textClass = `text-xs ${
-    isSpecialPage || scrolled ? "text-black" : "text-white"
+    isSpecialPage || scrolled ? "text-main" : "text-white"
   }`;
 
   const handleScroll = () => {

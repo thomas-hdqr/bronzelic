@@ -1,11 +1,20 @@
+import React, { useState } from "react"
 import Header from "../../components/Header.jsx";
 import Subscribe from "../../components/Subscribe.jsx";
 import Footer from "../../components/Footer.jsx";
 import Marquee from "../../components/Marquee.jsx";
 import BookAppointment from "../../components/BookAppointment.jsx";
 
+
 export default function Product() {
+
+
+
+
   return (
+
+
+
     <div>
       <Header isSpecialPage={true} />
 
@@ -41,6 +50,9 @@ export default function Product() {
                 bg-white text-gray-700 text-xl font-bold"
       >
         test
+
+  
+
       </div>
       <BookAppointment />
       <Marquee />
@@ -48,4 +60,7 @@ export default function Product() {
       <Footer />
     </div>
   );
+
+  
+  
 }

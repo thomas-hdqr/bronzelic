@@ -57,63 +57,56 @@ export default function Product() {
                 bg-white text-gray-700 text-xl font-bold"
       >
 
-        <div className="navigation-wrapper">
+        <div className="">
           <div ref={sliderRef} className="keen-slider">
             {/* Your slides */}
-            <div className="keen-slider__slide w-full h-full number-slide1">
+            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide1">
               <Image
                 src="/insta5.jpeg"
                 alt=""
-                width="200"
-                height="200"
+                fill
               />
             </div>
-            <div className="keen-slider__slide w-full h-full number-slide2">
+            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide2">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                width="200"
-                height="200"
+                fill
               />
             </div>
-            <div className="keen-slider__slide w-full h-full number-slide3">
+            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide3">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                width="200"
-                height="200"
+                fill
               />
             </div>
-            <div className="keen-slider__slide w-full h-full number-slide4">
+            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide4">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                width="200"
-                height="200"
+                fill
               />
             </div>
-            <div className="keen-slider__slide w-full h-full number-slide5">
+            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide5">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                width="200"
-                height="200"
+                fill
               />
             </div>
-            <div className="keen-slider__slide w-full h-full number-slide6">
+            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide6">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                width="200"
-                height="200"
+                fill
               />
             </div>
-            <div className="keen-slider__slide w-full h-full number-slide7">
+            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide7">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                width="200"
-                height="200"
+                fill
               />
             </div>
           </div>

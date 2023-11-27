@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -6,7 +7,6 @@ import Subscribe from "../../components/Subscribe.jsx";
 import Footer from "../../components/Footer.jsx";
 import Marquee from "../../components/Marquee.jsx";
 import BookAppointment from "../../components/BookAppointment.jsx";
-import Image from "next/image";
 
 export default function Product() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,7 +25,7 @@ export default function Product() {
     <div>
       <Header isSpecialPage={true} />
 
-      <div className="grid grid-cols-3 pt-32">
+      <div className="grid grid-cols-3 pt-14">
         {/* Step 1 */}
         <div className="flex items-center justify-center py-6 cursor-pointer space-x-2 border-y border-r border-[#59552D] bg-[#F9DCBB]">
           <div className="w-5 h-5 rounded-full border border-main flex items-center justify-center">
@@ -51,65 +51,36 @@ export default function Product() {
         </div>
       </div>
 
-      <div
-        className="w-40 h-40 rounded-full  
-                inline-flex items-center justify-center  
-                bg-white text-gray-700 text-xl font-bold"
-      >
-
-        <div className="">
-          <div ref={sliderRef} className="">
+      <div className="grid grid-cols-3">
+        <div className="keen-slider col-span-2">
+          <div ref={sliderRef} className="flex items-center">
             {/* Your slides */}
-            <div className="h-full w-full object-contain relative keen-slider__slide number-slide1">
-              <Image
-                src="/insta5.jpeg"
+
+            <div className="w-full h-full object-contain relative keen-slider__slide number-slide1">
+              <img
+                src="/Square_Solitaire_Emerald_Std_1.5mm_YG_Mirror_1.5ct.webp"
                 alt=""
-                fill
+                width="1200"
+                height="960"
               />
             </div>
-            <div className="h-full w-full object-contain relative keen-slider__slide number-slide2">
-              <Image
-                src="/insta1.jpeg"
-                alt=""
-                fill
-              />
+            <div className="w-full relative keen-slider__slide number-slide2">
+              <img src="/Square-Solitaire_04.jpg" alt="" width="1200" height="960" />
             </div>
-            <div className="h-full w-full object-contain relative keen-slider__slide number-slide3">
-              <Image
-                src="/insta1.jpeg"
-                alt=""
-                fill
-              />
+            <div className="w-full relative keen-slider__slide number-slide3">
+              <img src="/Square-Solitaire_05.webp" alt="" width="1200" height="960" />
             </div>
-            <div className="h-full w-full object-contain relative keen-slider__slide number-slide4">
-              <Image
-                src="/insta1.jpeg"
-                alt=""
-                fill
-              />
+            <div className="w-full relative keen-slider__slide number-slide4">
+              <img src="/Square-Solitaire_01.webp" alt="" width="1200" height="960" />
             </div>
-            <div className="h-full w-full object-contain relative keen-slider__slide number-slide5">
-              <Image
-                src="/insta1.jpeg"
-                alt=""
-                fill
-              />
+            <div className="w-full relative keen-slider__slide number-slide5">
+              <img src="/Square-Solitaire_02.webp" alt="" width="1200" height="960" />
             </div>
-            <div className="h-full w-full object-contain relative keen-slider__slide number-slide6">
-              <Image
-                src="/insta1.jpeg"
-                alt=""
-                fill
-              />
-            </div>
-            <div className="h-full w-full object-contain relative keen-slider__slide number-slide7">
-              <Image
-                src="/insta1.jpeg"
-                alt=""
-                fill
-              />
+            <div className="w-full relative keen-slider__slide number-slide6">
+              <img src="/Square-Solitaire_03.webp" alt="" width="1200" height="960" />
             </div>
           </div>
+
           {loaded && instanceRef.current && (
             <>
               <Arrow
@@ -132,8 +103,9 @@ export default function Product() {
           )}
         </div>
 
-
+        <div className="w-full col-span-1 1000:col-span-3 relative"></div>
       </div>
+
       <BookAppointment />
       <Marquee />
       <Subscribe />

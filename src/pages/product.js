@@ -58,51 +58,51 @@ export default function Product() {
       >
 
         <div className="">
-          <div ref={sliderRef} className="keen-slider">
+          <div ref={sliderRef} className="">
             {/* Your slides */}
-            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide1">
+            <div className="h-full w-full object-contain relative keen-slider__slide number-slide1">
               <Image
                 src="/insta5.jpeg"
                 alt=""
                 fill
               />
             </div>
-            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide2">
+            <div className="h-full w-full object-contain relative keen-slider__slide number-slide2">
               <Image
                 src="/insta1.jpeg"
                 alt=""
                 fill
               />
             </div>
-            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide3">
+            <div className="h-full w-full object-contain relative keen-slider__slide number-slide3">
               <Image
                 src="/insta1.jpeg"
                 alt=""
                 fill
               />
             </div>
-            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide4">
+            <div className="h-full w-full object-contain relative keen-slider__slide number-slide4">
               <Image
                 src="/insta1.jpeg"
                 alt=""
                 fill
               />
             </div>
-            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide5">
+            <div className="h-full w-full object-contain relative keen-slider__slide number-slide5">
               <Image
                 src="/insta1.jpeg"
                 alt=""
                 fill
               />
             </div>
-            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide6">
+            <div className="h-full w-full object-contain relative keen-slider__slide number-slide6">
               <Image
                 src="/insta1.jpeg"
                 alt=""
                 fill
               />
             </div>
-            <div className="w-full object-contain relative h-96 keen-slider__slide number-slide7">
+            <div className="h-full w-full object-contain relative keen-slider__slide number-slide7">
               <Image
                 src="/insta1.jpeg"
                 alt=""

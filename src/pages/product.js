@@ -56,64 +56,64 @@ export default function Product() {
                 inline-flex items-center justify-center  
                 bg-white text-gray-700 text-xl font-bold"
       >
-        test
+
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
             {/* Your slides */}
             <div className="keen-slider__slide w-full h-full number-slide1">
               <Image
-                src="/Square_Solitaire_Oval_Std_1.5mm_YG_Mirror_1.5ct.jpg"
+                src="/insta5.jpeg"
                 alt=""
-                layout="fill"
-                objectFit="contain"
+                width="200"
+                height="200"
               />
             </div>
             <div className="keen-slider__slide w-full h-full number-slide2">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                layout="fill"
-                objectFit="contain"
+                width="200"
+                height="200"
               />
             </div>
             <div className="keen-slider__slide w-full h-full number-slide3">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                layout="fill"
-                objectFit="contain"
+                width="200"
+                height="200"
               />
             </div>
             <div className="keen-slider__slide w-full h-full number-slide4">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                layout="fill"
-                objectFit="contain"
+                width="200"
+                height="200"
               />
             </div>
             <div className="keen-slider__slide w-full h-full number-slide5">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                layout="fill"
-                objectFit="contain"
+                width="200"
+                height="200"
               />
             </div>
             <div className="keen-slider__slide w-full h-full number-slide6">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                layout="fill"
-                objectFit="contain"
+                width="200"
+                height="200"
               />
             </div>
             <div className="keen-slider__slide w-full h-full number-slide7">
               <Image
                 src="/insta1.jpeg"
                 alt=""
-                layout="fill"
-                objectFit="contain"
+                width="200"
+                height="200"
               />
             </div>
           </div>
@@ -138,6 +138,8 @@ export default function Product() {
             </>
           )}
         </div>
+
+
       </div>
       <BookAppointment />
       <Marquee />

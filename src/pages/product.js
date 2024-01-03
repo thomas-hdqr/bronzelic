@@ -103,7 +103,11 @@ export default function Product() {
           )}
         </div>
 
-        <div className="w-full col-span-1 1000:col-span-3 relative"></div>
+        <div className="w-full col-span-1 1000:col-span-3 relative">
+          <h1>test</h1>
+        </div>
+
+
       </div>
 
       <BookAppointment />

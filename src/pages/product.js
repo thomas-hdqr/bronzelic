@@ -23,19 +23,14 @@ export default function Product() {
   });
 
   // Additional states for the second slider
-  const [currentSlide2, setCurrentSlide2] = useState(0);
-  const [loaded2, setLoaded2] = useState(false);
-  const [sliderRef2, instanceRef2] = useKeenSlider({
-    initial: 0,
-    mode: "free-snap",
-    slidesPerView: 3, // Adjust this number based on your design
-    slideChanged(slider) {
-      setCurrentSlide2(slider.track.details.rel);
+  const [sliderRef2] = useKeenSlider({
+    loop: true,
+    mode: "free",
+    slides: {
+      perView: 9,
+      spacing: 15,
     },
-    created() {
-      setLoaded2(true);
-    },
-  });
+  })
 
   return (
     <div>
@@ -146,7 +141,7 @@ export default function Product() {
 
         <div className="w-full px-7 py-5 col-span-1 1000:col-span-3 relative uppercase">
           <div>
-            <div className="flex justify-between">
+            <div className="flex justify-between text-xs">
               <p>step 1: customize yours</p>
               <p>24 reviews</p>
             </div>
@@ -160,33 +155,70 @@ export default function Product() {
           </div>
           <h1 className="py-10 text-center">the square solitaire</h1>
 
-          <div className="px-10">
+          <div className="p-10">
             <div>
               <div className="border-b border-main">
-                <p>shape: radiant</p>
+                <p className="text-main text-xs"><span className="text-main-opacity-200 mr-1">shape:</span>radiant</p>
               </div>
               <div
                 ref={sliderRef2}
-                className="second-slider flex space-between gap-x-3"
+                className="second-slider flex space-between gap-x-3 pt-3"
               >
-                <div className="second-slider__slide number-slide1 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
                   <img
                     alt=""
                     src="/Diamond-Icon_Asscher.png"
                   />
                 </div>
-                <div className="second-slider__slide number-slide2 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                <div className="second-slider__slide number-slide2 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
                   <img
                     alt=""
-                    src="/Diamond-Cushion.png"
+                    src="/Diamond-Icon_Cushion.png"
                   />
                 </div>
-                <div className="second-slider__slide number-slide3 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                <div className="second-slider__slide number-slide3 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
                   <img
                     alt=""
-                    src="/Diamond-Emerald.png"
+                    src="/Diamond-Icon_Emerald.png"
                   />
                 </div>
+                <div className="second-slider__slide number-slide3 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <img
+                    alt=""
+                    src="/Diamond-Icon_Marquise.png"
+                  />
+                </div>
+                <div className="second-slider__slide number-slide3 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <img
+                    alt=""
+                    src="/Diamond-Icon_Oval.png"
+                  />
+                </div>
+                <div className="second-slider__slide number-slide3 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <img
+                    alt=""
+                    src="/Diamond-Icon_Pear.png"
+                  />
+                </div>
+                <div className="second-slider__slide number-slide3 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <img
+                    alt=""
+                    src="/Diamond-Icon_Princess.png"
+                  />
+                </div>
+                <div className="second-slider__slide number-slide3 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <img
+                    alt=""
+                    src="/Diamond-Icon_Radiant.png"
+                  />
+                </div>
+                <div className="second-slider__slide number-slide3 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <img
+                    alt=""
+                    src="/Diamond-Icon_Round.png"
+                  />
+                </div>
+                
               </div>
             </div>
           </div>

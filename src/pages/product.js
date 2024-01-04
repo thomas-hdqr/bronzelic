@@ -139,11 +139,11 @@ export default function Product() {
           )}
         </div>
 
-        <div className="w-full px-7 py-5 col-span-1 1000:col-span-3 relative uppercase">
+        <div className="w-full px-7 py-5 col-span-1 1000:col-span-3 relative uppercase text-main">
           <div>
             <div className="flex justify-between text-xs">
               <p>step 1: customize yours</p>
-              <p>24 reviews</p>
+              <p className="cursor-pointer">24 reviews</p>
             </div>
             <div className="flex justify-end">
               <StarIcon className="text-yellow-500 h-3 w-3" />
@@ -155,9 +155,9 @@ export default function Product() {
           </div>
           <h1 className="py-10 text-center">the square solitaire</h1>
 
-          <div className="p-10">
+          <div className="px-10 py-5">
             <div>
-              <div className="border-b border-main">
+              <div className="border-b border-main py-2">
                 <p className="text-main text-xs"><span className="text-main-opacity-200 mr-1">shape:</span>radiant</p>
               </div>
               <div
@@ -218,6 +218,52 @@ export default function Product() {
                     src="/Diamond-Icon_Round.png"
                   />
                 </div>
+                
+              </div>
+            </div>
+          </div>
+          <div className="px-10 py-5">
+            <div>
+              <div className="border-b border-main py-2">
+                <p className="text-main text-xs"><span className="text-main-opacity-200 mr-1">width:</span>1.5mm</p>
+              </div>
+              <div
+                ref={sliderRef2}
+                className="second-slider flex space-between gap-x-3 pt-3 text-xs"
+              >
+                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <p>1.5</p>
+                </div>
+                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <p>3</p>
+                </div>
+                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <p>4.5</p>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div className="px-10 py-5">
+            <div>
+              <div className="border-b border-main py-2">
+                <p className="text-main text-xs"><span className="text-main-opacity-200 mr-1">metal:</span>yellow gold</p>
+              </div>
+              <div
+                ref={sliderRef2}
+                className="second-slider flex space-between gap-x-3 pt-3 text-xs"
+              >
+                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <p>1.5</p>
+                </div>
+                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <p>3</p>
+                </div>
+                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                  <p>4.5</p>
+                </div>
+                
                 
               </div>
             </div>

@@ -6,7 +6,7 @@
   touch-action: pan-y;
 }
 
-.keen-slider[dir='rtl'] {
+.keen-slider[dir="rtl"] {
   direction: rtl;
 }
 

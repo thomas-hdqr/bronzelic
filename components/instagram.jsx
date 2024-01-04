@@ -1,15 +1,12 @@
-import { React, useState, useRef, useEffect } from 'react';
-import Image from 'next/image';
-import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
-} from '@heroicons/react/24/outline';
-import { useKeenSlider } from 'keen-slider/react';
-import 'keen-slider/keen-slider.min.css';
+import { React, useState, useRef, useEffect } from "react";
+import Image from "next/image";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
 function Instagram() {
   const [sliderRef] = useKeenSlider({
-    mode: 'free-snap',
+    mode: "free-snap",
     slides: {
       perView: 2.5,
       spacing: 15,

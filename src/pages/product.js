@@ -7,6 +7,7 @@ import Subscribe from "../../components/Subscribe.jsx";
 import Footer from "../../components/Footer.jsx";
 import Marquee from "../../components/Marquee.jsx";
 import BookAppointment from "../../components/BookAppointment.jsx";
+import { StarIcon } from "@heroicons/react/24/solid";
 
 export default function Product() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -65,19 +66,44 @@ export default function Product() {
               />
             </div>
             <div className="w-full relative keen-slider__slide number-slide2">
-              <img src="/Square-Solitaire_04.jpg" alt="" width="1200" height="960" />
+              <img
+                src="/Square-Solitaire_04.jpg"
+                alt=""
+                width="1200"
+                height="960"
+              />
             </div>
             <div className="w-full relative keen-slider__slide number-slide3">
-              <img src="/Square-Solitaire_05.webp" alt="" width="1200" height="960" />
+              <img
+                src="/Square-Solitaire_05.webp"
+                alt=""
+                width="1200"
+                height="960"
+              />
             </div>
             <div className="w-full relative keen-slider__slide number-slide4">
-              <img src="/Square-Solitaire_01.webp" alt="" width="1200" height="960" />
+              <img
+                src="/Square-Solitaire_01.webp"
+                alt=""
+                width="1200"
+                height="960"
+              />
             </div>
             <div className="w-full relative keen-slider__slide number-slide5">
-              <img src="/Square-Solitaire_02.webp" alt="" width="1200" height="960" />
+              <img
+                src="/Square-Solitaire_02.webp"
+                alt=""
+                width="1200"
+                height="960"
+              />
             </div>
             <div className="w-full relative keen-slider__slide number-slide6">
-              <img src="/Square-Solitaire_03.webp" alt="" width="1200" height="960" />
+              <img
+                src="/Square-Solitaire_03.webp"
+                alt=""
+                width="1200"
+                height="960"
+              />
             </div>
           </div>
 
@@ -103,15 +129,22 @@ export default function Product() {
           )}
         </div>
 
-        <div className="w-full px-5 col-span-1 1000:col-span-3 relative">
-          <div className="flex justify-between">
-            <p>test</p>
-            <p>test</p>
+        <div className="w-full px-7 py-5 col-span-1 1000:col-span-3 relative uppercase">
+          <div>
+            <div className="flex justify-between">
+              <p>step 1: customize yours</p>
+              <p>24 reviews</p>
+            </div>
+            <div className="flex justify-end">
+              <StarIcon className="text-yellow-500 h-3 w-3" />
+              <StarIcon className="text-yellow-500 h-3 w-3" />
+              <StarIcon className="text-yellow-500 h-3 w-3" />
+              <StarIcon className="text-yellow-500 h-3 w-3" />
+              <StarIcon className="text-yellow-500 h-3 w-3" />
+            </div>
           </div>
-          <h1 className="uppercase text-center">the square solitaire</h1>
+          <h1 className="text-center">the square solitaire</h1>
         </div>
-
-
       </div>
 
       <BookAppointment />

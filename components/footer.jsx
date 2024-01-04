@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
-
     <div className="px-10">
-
       <div className="grid sm:grid-cols-5 grid-cols-2 uppercase text-xs text-main pb-16">
         <div className="">
           <p className="text-[#59552e9c] py-4">give us a ring</p>
@@ -43,13 +41,11 @@ function Footer() {
         </div>
       </div>
 
-      <div className='uppercase text-main text-xs text-center border-t border-main py-2'>
+      <div className="uppercase text-main text-xs text-center border-t border-main py-2">
         <p>© 2023 BRONZELIC CO</p>
       </div>
-
     </div>
-
-  )
+  );
 }
 
-export default Footer
+export default Footer;

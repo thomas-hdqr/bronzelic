@@ -8,6 +8,7 @@ import Footer from "../../components/Footer.jsx";
 import Marquee from "../../components/Marquee.jsx";
 import BookAppointment from "../../components/BookAppointment.jsx";
 import { StarIcon } from "@heroicons/react/24/solid";
+import Image from "next/image.js";
 
 export default function Product() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -151,8 +152,16 @@ export default function Product() {
                 <p>shape: radiant</p>
               </div>
               <div className="flex space-between gap-x-3">
-            <button className="w-[21px] h-[21px] rounded-full relative duration-300 transition-colors border-black border flex items-center justify-center hover:border-opacity-20 border-opacity-0">
-              <div className="w-[15px] h-[15px] rounded-full bg-[#ffe6aa]"></div>
+            <button className="w-[30px] h-[30px] rounded-md relative duration-300 transition-colors border-black border flex items-center justify-center hover:border-opacity-20 border-opacity-0">
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
+                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
             </button>
             
           </div>

@@ -144,13 +144,21 @@ export default function Product() {
             </div>
           </div>
           <h1 className="text-center">the square solitaire</h1>
+
           <div>
             <div>
               <div className="border-b border-main">
                 <p>shape: radiant</p>
               </div>
+              <div className="flex space-between gap-x-3">
+            <button className="w-[21px] h-[21px] rounded-full relative duration-300 transition-colors border-black border flex items-center justify-center hover:border-opacity-20 border-opacity-0">
+              <div className="w-[15px] h-[15px] rounded-full bg-[#ffe6aa]"></div>
+            </button>
+            
+          </div>
             </div>
           </div>
+
         </div>
       </div>
 

@@ -16,3 +16,19 @@
   height: 100%;
   position: relative;
 }
+
+/* New styles for the second slider */
+.second-slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  touch-action: pan-y;
+}
+
+.second-slider__slide {
+  flex-shrink: 0;
+  width: auto; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+  position: relative;
+}

@@ -8,7 +8,6 @@ import Footer from "../../components/Footer.jsx";
 import Marquee from "../../components/Marquee.jsx";
 import BookAppointment from "../../components/BookAppointment.jsx";
 import { StarIcon } from "@heroicons/react/24/solid";
-import Image from "next/image.js";
 
 export default function Product() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,6 +19,21 @@ export default function Product() {
     },
     created() {
       setLoaded(true);
+    },
+  });
+
+  // Additional states for the second slider
+  const [currentSlide2, setCurrentSlide2] = useState(0);
+  const [loaded2, setLoaded2] = useState(false);
+  const [sliderRef2, instanceRef2] = useKeenSlider({
+    initial: 0,
+    mode: "free-snap",
+    slidesPerView: 3, // Adjust this number based on your design
+    slideChanged(slider) {
+      setCurrentSlide2(slider.track.details.rel);
+    },
+    created() {
+      setLoaded2(true);
     },
   });
 
@@ -144,95 +158,35 @@ export default function Product() {
               <StarIcon className="text-yellow-500 h-3 w-3" />
             </div>
           </div>
-          <h1 className="text-center">the square solitaire</h1>
+          <h1 className="py-10 text-center">the square solitaire</h1>
 
-          <div>
+          <div className="px-10">
             <div>
               <div className="border-b border-main">
                 <p>shape: radiant</p>
               </div>
-              <div className="flex space-between gap-x-3">
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
+              <div
+                ref={sliderRef2}
+                className="second-slider flex space-between gap-x-3"
+              >
+                <div className="second-slider__slide number-slide1 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <img
                     alt=""
-                    width="100"
-                    height="100"
                     src="/Diamond-Icon_Asscher.png"
                   />
-                </button>
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
+                </div>
+                <div className="second-slider__slide number-slide2 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <img
                     alt=""
-                    width="100"
-                    height="100"
-                    src="/Diamond-Icon_Cushion.png"
+                    src="/Diamond-Cushion.png"
                   />
-                </button>
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
+                </div>
+                <div className="second-slider__slide number-slide3 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <img
                     alt=""
-                    width="100"
-                    height="100"
-                    src="/Diamond-Icon_Emerald.png"
+                    src="/Diamond-Emerald.png"
                   />
-                </button>
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
-                    alt=""
-                    width="100"
-                    height="100"
-                    src="/Diamond-Icon_Marquise.png"
-                  />
-                </button>
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
-                    alt=""
-                    width="100"
-                    height="100"
-                    src="/Diamond-Icon_Oval.png"
-                  />
-                </button>
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
-                    alt=""
-                    width="100"
-                    height="100"
-                    src="/Diamond-Icon_Pear.png"
-                  />
-                </button>
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
-                    alt=""
-                    width="100"
-                    height="100"
-                    src="/Diamond-Icon_Princess.png"
-                  />
-                </button>
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
-                    alt=""
-                    width="100"
-                    height="100"
-                    src="/Diamond-Icon_Radiant.png"
-                  />
-                </button>
-                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
-                  <Image
-                    className="p-2"
-                    alt=""
-                    width="100"
-                    height="100"
-                    src="/Diamond-Icon_Round.png"
-                  />
-                </button>
+                </div>
               </div>
             </div>
           </div>

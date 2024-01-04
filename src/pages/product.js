@@ -252,16 +252,19 @@ export default function Product() {
               </div>
               <div
                 ref={sliderRef2}
-                className="second-slider flex space-between gap-x-3 pt-3 text-xs"
+                className="second-slider flex justify-between gap-x-3 pt-3 text-xs"
               >
-                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                  <p>1.5</p>
+                <div className="second-slider__slide number-slide1 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                <div className="w-[20px] h-[20px] rounded-full bg-[#ffe6aa]"></div>
                 </div>
-                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                  <p>3</p>
+                <div className="second-slider__slide number-slide1 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                <div className="w-[20px] h-[20px] rounded-full bg-[#ebebeb]"></div>
                 </div>
-                <div className="second-slider__slide number-slide1 w-8 h-8 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                  <p>4.5</p>
+                <div className="second-slider__slide number-slide1 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                <div className="w-[20px] h-[20px] rounded-full bg-[#ffd2be]"></div>
+                </div>
+                <div className="second-slider__slide number-slide1 w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
+                <div className="w-[20px] h-[20px] rounded-full bg-[#d2d2d2]"></div>
                 </div>
                 
                 

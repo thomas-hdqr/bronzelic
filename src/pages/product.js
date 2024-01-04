@@ -152,22 +152,90 @@ export default function Product() {
                 <p>shape: radiant</p>
               </div>
               <div className="flex space-between gap-x-3">
-            <button className="w-[30px] h-[30px] rounded-md relative duration-300 transition-colors border-black border flex items-center justify-center hover:border-opacity-20 border-opacity-0">
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-                <Image alt="" width="100" height="100" src="/Diamond-Icon_Asscher.png" />
-            </button>
-            
-          </div>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Asscher.png"
+                  />
+                </button>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Cushion.png"
+                  />
+                </button>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Emerald.png"
+                  />
+                </button>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Marquise.png"
+                  />
+                </button>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Oval.png"
+                  />
+                </button>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Pear.png"
+                  />
+                </button>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Princess.png"
+                  />
+                </button>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Radiant.png"
+                  />
+                </button>
+                <button className="w-10 h-10 rounded-md duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0">
+                  <Image
+                    className="p-2"
+                    alt=""
+                    width="100"
+                    height="100"
+                    src="/Diamond-Icon_Round.png"
+                  />
+                </button>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
 

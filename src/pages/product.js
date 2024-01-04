@@ -103,8 +103,12 @@ export default function Product() {
           )}
         </div>
 
-        <div className="w-full col-span-1 1000:col-span-3 relative">
-          <h1>test</h1>
+        <div className="w-full px-5 col-span-1 1000:col-span-3 relative">
+          <div className="flex justify-between">
+            <p>test</p>
+            <p>test</p>
+          </div>
+          <h1 className="uppercase text-center">the square solitaire</h1>
         </div>
 
 

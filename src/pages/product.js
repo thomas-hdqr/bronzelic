@@ -144,6 +144,13 @@ export default function Product() {
             </div>
           </div>
           <h1 className="text-center">the square solitaire</h1>
+          <div>
+            <div>
+              <div className="border-b border-main">
+                <p>shape: radiant</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

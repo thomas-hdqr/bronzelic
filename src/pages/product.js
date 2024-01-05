@@ -8,6 +8,7 @@ import Footer from "../../components/Footer.jsx";
 import Marquee from "../../components/Marquee.jsx";
 import BookAppointment from "../../components/BookAppointment.jsx";
 import { StarIcon } from "@heroicons/react/24/solid";
+import ProductDetails from "../../components/ProductDetails.jsx";
 
 export default function Product() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -284,10 +285,12 @@ export default function Product() {
 
           {/* third part */}
 
-          <div className="bg-[#59552D] h-auto uppercase text-center text-sm text-white mt-10 py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">next step: subtotal: $799</div>
+          <div className="bg-[#59552D] h-14 uppercase text-center text-sm text-white mt-10 py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
+            next step: subtotal: $799
+          </div>
         </div>
       </div>
-
+      <ProductDetails />
       <BookAppointment />
       <Marquee />
       <Subscribe />

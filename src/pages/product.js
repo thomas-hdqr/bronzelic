@@ -10,6 +10,7 @@ import BookAppointment from "../../components/BookAppointment.jsx";
 import { StarIcon } from "@heroicons/react/24/solid";
 import ProductDetails from "../../components/ProductDetails.jsx";
 import ProductStory from "../../components/ProductStory.jsx";
+import ProductPairing from "../../components/ProductPairing.jsx";
 
 export default function Product() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -293,6 +294,7 @@ export default function Product() {
       </div>
       <ProductDetails />
       <ProductStory/>
+      <ProductPairing/>
       <BookAppointment />
       <Marquee />
       <Subscribe />

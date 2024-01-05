@@ -8,7 +8,7 @@ function ProductDetails() {
   return (
     <div className="grid grid-cols-12 text-main mx-4 sm:mx-10 my-32 py-10 sm:py-20">
       {/* first column */}
-      <div className="col-span-5">
+      <div className="col-span-5 pr-40">
       <div className="flex flex-col space-y-5">
         <div>
           <p className="uppercase text-sm">for our planet tomorrow</p>
@@ -34,26 +34,26 @@ function ProductDetails() {
       <div className="flex flex-col">
         <div className="">
           {/* Tab navigation */}
-          <div className="flex border-b">
+          <div className="grid grid-cols-2 border-y border-main h-11 ">
             <button
-              className={`mr-4 pb-2 text-sm font-semibold ${
+              className={`text-md col-span-1 border-r border-main ${
                 activeTab === "details"
-                  ? "text-gray-800 border-b-2 border-orange-500"
-                  : "text-gray-600 border-b-2 border-transparent hover:border-gray-300"
+                  ? " bg-[#f9dcbb]"
+                  : " hover:bg-[#f9dcbb]"
               }`}
               onClick={() => setActiveTab("details")}
             >
               PRODUCT DETAILS
             </button>
             <button
-              className={`mr-4 pb-2 text-sm font-semibold ${
+              className={`text-md col-span-1 ${
                 activeTab === "holden"
-                  ? "text-gray-800 border-b-2 border-orange-500"
-                  : "text-gray-600 border-b-2 border-transparent hover:border-gray-300"
+                  ? "bg-[#f9dcbb]"
+                  : " hover:bg-[#f9dcbb]"
               }`}
               onClick={() => setActiveTab("holden")}
             >
-              WHY HOLDEN?
+              WHY BRONZELIC?
             </button>
           </div>
 

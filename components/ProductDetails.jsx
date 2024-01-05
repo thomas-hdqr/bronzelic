@@ -55,7 +55,7 @@ function ProductDetails() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Left side content */}
             <div>
-              {/* ... */}
+              
             </div>
 
             {/* Right side content */}

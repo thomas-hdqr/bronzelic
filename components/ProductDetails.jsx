@@ -6,16 +6,17 @@ function ProductDetails() {
   const [activeTab, setActiveTab] = useState("details");
 
   return (
-    <div className="flex flex-row text-main">
+    <div className="grid grid-cols-12 text-main mx-4 sm:mx-10 my-32 py-10 sm:py-20">
       {/* first column */}
-      <div className="flex flex-col">
+      <div className="col-span-5">
+      <div className="flex flex-col space-y-5">
         <div>
-          <p>for our planet tomorrow</p>
+          <p className="uppercase text-sm">for our planet tomorrow</p>
         </div>
         <div>
-          <p>
+          <h3 className="text-xl">
             We're committed to offsetting 100% of this ring's carbon footprint.
-          </p>
+          </h3>
         </div>
         <div>
           <Image
@@ -25,9 +26,11 @@ function ProductDetails() {
             alt=""
           />
         </div>
+        </div>
       </div>
 
       {/* second column */}
+      <div className="col-span-7">
       <div className="flex flex-col">
         <div className="">
           {/* Tab navigation */}
@@ -109,56 +112,71 @@ function ProductDetails() {
                     </div>
                   </div>
                 </div>
-
-                {/* Right side content */}
-                <div>{/* ... */}</div>
               </div>
             )}
 
             {/* Content for the WHY HOLDEN? tab */}
             {activeTab === "holden" && (
-                <div className="">
+              <div className="">
                 <div className="grid grid-cols-12">
-                  <div className="col-span-4 border-main border-b border-r">
-                    <p className="uppercase pr-11">ring specification</p>
+                  <div className="col-span-5 border-main border-b border-r">
+                    <p className="pt-2 uppercase pr-11">
+                      MADE WITH LOVE IN NYC
+                    </p>
                   </div>
-                  <div className="col-span-8 flex flex-col">
+                  <div className="col-span-7 flex flex-col">
                     <div className="grid">
-                      <div className="grid grid-cols-2">
-                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
-                          Ring Width
-                        </div>
-                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
-                          1.5mm, 3mm, 4.5mm
-                        </div>
-                      </div>
-                      <div className="grid grid-cols-2">
-                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
-                          Ring Height
-                        </div>
-                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
-                          1.75 - 2mm
-                        </div>
-                      </div>
-                      <div className="grid grid-cols-2">
-                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
-                          Ring Fit
-                        </div>
-                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
-                          Comfort Fit
+                      <div className="">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b  border-main">
+                          We custom make each ring to order in our New York City
+                          workshops using recycled precious metals and ethically
+                          sourced lab-grown diamonds. All of our fine gold is
+                          100% SCS-certified recycled, and we offset 100% of our
+                          carbon emissions each year.
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
- 
-
-                {/* Right side content */}
-                <div>{/* ... */}</div>
+                <div className="grid grid-cols-12">
+                  <div className="col-span-5 border-main border-b border-r">
+                    <p className="pt-2 uppercase pr-11">RISK-FREE GUARANTEE</p>
+                  </div>
+                  <div className="col-span-7 flex flex-col">
+                    <div className="grid">
+                      <div className="">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b  border-main">
+                          The perfect ring should fit just right. That’s why we
+                          offer free shipping, free 30-day returns/exchanges,
+                          and 60-day complimentary resizing.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-12">
+                  <div className="col-span-5 border-main border-b border-r">
+                    <p className="pt-2 uppercase pr-11">
+                      DIRECT-TO-YOU PRICING
+                    </p>
+                  </div>
+                  <div className="col-span-7 flex flex-col">
+                    <div className="grid">
+                      <div className="">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b  border-main">
+                          Traditional jewelry markups are often 8-10x the cost
+                          of production. By sending rings direct to your door,
+                          we offer handcrafted rings at a fraction of the price.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             )}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

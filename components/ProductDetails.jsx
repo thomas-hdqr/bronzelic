@@ -59,42 +59,55 @@ function ProductDetails() {
             {/* Content for the PRODUCT DETAILS tab */}
             {activeTab === "details" && (
               <div className="">
-             <div className="grid grid-cols-12"> 
-                <div className="col-span-4 border-main border-b border-r">
-                  <p className="uppercase pr-11">ring specification</p>
-                </div>
-                <div className="col-span-8 flex flex-col">
-                  <div className="grid">
-                    <div className="grid grid-cols-2">
-                      <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">Ring Width</div>
-                      <div className="p-2.5 pb-2.5 pl-5 border-b border-main">1.5mm, 3mm, 4.5mm</div>
+                <div className="grid grid-cols-12">
+                  <div className="col-span-4 border-main border-b border-r">
+                    <p className="uppercase pr-11">ring specification</p>
+                  </div>
+                  <div className="col-span-8 flex flex-col">
+                    <div className="grid">
+                      <div className="grid grid-cols-2">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
+                          Ring Width
+                        </div>
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
+                          1.5mm, 3mm, 4.5mm
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
+                          Ring Height
+                        </div>
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
+                          1.75 - 2mm
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
+                          Ring Fit
+                        </div>
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
+                          Comfort Fit
+                        </div>
+                      </div>
                     </div>
-                    <div className="grid grid-cols-2">
-                      <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">Ring Height</div>
-                      <div className="p-2.5 pb-2.5 pl-5 border-b border-main">1.75 - 2mm</div>
-                    </div>
-                    <div className="grid grid-cols-2">
-                      <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">Ring Fit</div>
-                      <div className="p-2.5 pb-2.5 pl-5 border-b border-main">Comfort Fit</div>
-                    </div>
-                    
                   </div>
                 </div>
-                </div>
-             <div className="grid grid-cols-12"> 
-                <div className="col-span-4 border-main border-b border-r  pr-11 flex items-center">
-                  <p className="uppercase">center stone</p>
-                </div>
-                <div className="col-span-8 flex flex-col">
-                  <div className="grid">
-                    <div className="grid grid-cols-2">
-                      <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">Diamond Certification</div>
-                      <div className="p-2.5 pb-2.5 pl-5 border-b border-main">GIA or IGI</div>
-                    </div>
-    
-                    
+                <div className="grid grid-cols-12">
+                  <div className="col-span-4 border-main border-b border-r  pr-11 flex items-center">
+                    <p className="uppercase">center stone</p>
                   </div>
-                </div>
+                  <div className="col-span-8 flex flex-col">
+                    <div className="grid">
+                      <div className="grid grid-cols-2">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
+                          Diamond Certification
+                        </div>
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
+                          GIA or IGI
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Right side content */}
@@ -104,8 +117,44 @@ function ProductDetails() {
 
             {/* Content for the WHY HOLDEN? tab */}
             {activeTab === "holden" && (
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* Content specific to WHY HOLDEN? tab */}
+                <div className="">
+                <div className="grid grid-cols-12">
+                  <div className="col-span-4 border-main border-b border-r">
+                    <p className="uppercase pr-11">ring specification</p>
+                  </div>
+                  <div className="col-span-8 flex flex-col">
+                    <div className="grid">
+                      <div className="grid grid-cols-2">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
+                          Ring Width
+                        </div>
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
+                          1.5mm, 3mm, 4.5mm
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
+                          Ring Height
+                        </div>
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
+                          1.75 - 2mm
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-2">
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">
+                          Ring Fit
+                        </div>
+                        <div className="p-2.5 pb-2.5 pl-5 border-b border-main">
+                          Comfort Fit
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+ 
+
+                {/* Right side content */}
+                <div>{/* ... */}</div>
               </div>
             )}
           </div>

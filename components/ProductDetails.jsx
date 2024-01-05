@@ -6,7 +6,7 @@ function ProductDetails() {
   const [activeTab, setActiveTab] = useState("details");
 
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row text-main">
       {/* first column */}
       <div className="flex flex-col">
         <div>
@@ -55,28 +55,44 @@ function ProductDetails() {
           </div>
 
           {/* Tab content */}
-          <div className="pt-4">
+          <div className="pt-4 text-main text-xs">
             {/* Content for the PRODUCT DETAILS tab */}
             {activeTab === "details" && (
               <div className="">
              <div className="grid grid-cols-12"> 
-                <div className="col-span-4">
-                  <p>ring specification</p>
+                <div className="col-span-4 border-main border-b border-r">
+                  <p className="uppercase pr-11">ring specification</p>
                 </div>
                 <div className="col-span-8 flex flex-col">
                   <div className="grid">
                     <div className="grid grid-cols-2">
-                      <div>ring width</div>
-                      <div>ring width</div>
+                      <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">Ring Width</div>
+                      <div className="p-2.5 pb-2.5 pl-5 border-b border-main">1.5mm, 3mm, 4.5mm</div>
                     </div>
                     <div className="grid grid-cols-2">
-                      <div>ring width</div>
-                      <div>ring width</div>
+                      <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">Ring Height</div>
+                      <div className="p-2.5 pb-2.5 pl-5 border-b border-main">1.75 - 2mm</div>
                     </div>
                     <div className="grid grid-cols-2">
-                      <div>ring width</div>
-                      <div>ring width</div>
+                      <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">Ring Fit</div>
+                      <div className="p-2.5 pb-2.5 pl-5 border-b border-main">Comfort Fit</div>
                     </div>
+                    
+                  </div>
+                </div>
+                </div>
+             <div className="grid grid-cols-12"> 
+                <div className="col-span-4 border-main border-b border-r  pr-11 flex items-center">
+                  <p className="uppercase">center stone</p>
+                </div>
+                <div className="col-span-8 flex flex-col">
+                  <div className="grid">
+                    <div className="grid grid-cols-2">
+                      <div className="p-2.5 pb-2.5 pl-5 border-b border-r border-main">Diamond Certification</div>
+                      <div className="p-2.5 pb-2.5 pl-5 border-b border-main">GIA or IGI</div>
+                    </div>
+    
+                    
                   </div>
                 </div>
                 </div>

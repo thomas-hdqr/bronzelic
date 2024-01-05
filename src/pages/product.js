@@ -9,6 +9,7 @@ import Marquee from "../../components/Marquee.jsx";
 import BookAppointment from "../../components/BookAppointment.jsx";
 import { StarIcon } from "@heroicons/react/24/solid";
 import ProductDetails from "../../components/ProductDetails.jsx";
+import ProductStory from "../../components/ProductStory.jsx";
 
 export default function Product() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -291,6 +292,7 @@ export default function Product() {
         </div>
       </div>
       <ProductDetails />
+      <ProductStory/>
       <BookAppointment />
       <Marquee />
       <Subscribe />

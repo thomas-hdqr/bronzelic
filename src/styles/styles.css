@@ -32,3 +32,30 @@
   height: 100%; /* Adjust the height as needed */
   position: relative;
 }
+
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #333; /* Arrow color */
+  z-index: 2;
+}
+
+.arrow--left {
+  left: 10px;
+}
+
+.arrow--right {
+  right: 10px;
+}
+
+.arrow--disabled {
+  fill: #ccc; /* Disabled arrow color */
+  pointer-events: none;
+}

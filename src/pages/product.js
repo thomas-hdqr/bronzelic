@@ -12,6 +12,7 @@ import ProductDetails from "../../components/ProductDetails.jsx";
 import ProductStory from "../../components/ProductStory.jsx";
 import ProductPairing from "../../components/ProductPairing.jsx";
 
+
 export default function Product() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -125,26 +126,24 @@ export default function Product() {
             </div>
           </div>
 
-          {loaded && instanceRef.current && (
-            <>
-              <Arrow
-                left
-                onClick={(e) =>
-                  e.stopPropagation() || instanceRef.current?.prev()
-                }
-                disabled={currentSlide === 0}
-              />
-              <Arrow
-                onClick={(e) =>
-                  e.stopPropagation() || instanceRef.current?.next()
-                }
-                disabled={
-                  currentSlide ===
-                  instanceRef.current.track.details.slides.length - 1
-                }
-              />
-            </>
-          )}
+    {/* Arrow components for navigation */}
+{loaded && instanceRef.current && (
+  <>
+    <Arrow
+      left
+      onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
+      disabled={currentSlide === 0}
+    />
+    <Arrow
+      onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
+      disabled={
+        currentSlide === instanceRef.current.track.details.slides.length - 1
+      }
+    />
+  </>
+)}
+
+
         </div>
 
         <div className=" flex flex-col justify-center w-full  py-5 col-span-1 1000:col-span-3 relative uppercase text-main">
@@ -287,7 +286,7 @@ export default function Product() {
 
           {/* third part */}
 
-          <div className="bg-[#59552D] h-14 uppercase text-center text-sm text-white mt-10 py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer" style={{ height: '100%' }}>
+          <div className="bg-[#59552D] h-14 uppercase text-center text-sm text-white mt-10 py-5 px-10 transition duration-200 ease-in hover:bg-transparent hover:border-2 hover:bg-white hover:text-main hover:border-[#59552D] cursor-pointer">
             next step: subtotal: $799
           </div>
         </div>

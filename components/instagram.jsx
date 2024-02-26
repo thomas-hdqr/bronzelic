@@ -1,5 +1,5 @@
 import { React, useState, useRef, useEffect } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";

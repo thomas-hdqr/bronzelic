@@ -71,7 +71,8 @@ function ProductPairing() {
                 <Image
                   src={image2}
                   alt="engagement rings"
-                  fill
+                  layout="fill"
+                  objectFit="cover"
                   className="object-cover py-4"
                 />
               </div>
@@ -98,7 +99,8 @@ function ProductPairing() {
                 <Image
                   src={image3}
                   alt="engagement rings"
-                  fill
+                  layout="fill"
+                  objectFit="cover"
                   className="object-cover py-4"
                 />
               </div>

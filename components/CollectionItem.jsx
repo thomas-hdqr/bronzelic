@@ -10,14 +10,16 @@ function CollectionItem({ imageUrl, hoverImageUrl, title, price, sizes }) {
             sizes={sizes}
             src={imageUrl}
             alt="title"
-            fill
+            layout="fill"
+            objectFit="cover"
             className="object-cover py-4"
           />
           <Image
             sizes={sizes}
             src={hoverImageUrl}
             alt={title + " on hover"}
-            fill
+            layout="fill"
+            objectFit="cover"
             className="object-cover py-4 absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 ease-in-out"
           />
         </div>

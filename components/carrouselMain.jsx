@@ -70,7 +70,8 @@ function CarrouselMain() {
                 <Image
                   src={image2}
                   alt="engagement rings"
-                  fill
+                  layout="fill"
+                  objectFit="cover"
                   className="object-cover py-4"
                 />
               </div>
@@ -97,7 +98,8 @@ function CarrouselMain() {
                 <Image
                   src={image3}
                   alt="engagement rings"
-                  fill
+                  layout="fill"
+                  objectFit="cover"
                   className="object-cover py-4"
                 />
               </div>

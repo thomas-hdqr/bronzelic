@@ -45,7 +45,7 @@ export default function Product() {
     <div>
       <Header isSpecialPage={true} />
 
-      <div className="grid grid-cols-3 pt-14">
+      <div className="hidden sm:grid sm:grid-cols-3 sm:pt-14">
         {/* Step 1 */}
         <div className="flex items-center justify-center py-6 cursor-pointer space-x-2 border-y border-r border-[#59552D] bg-[#F9DCBB]">
           <div className="w-5 h-5 rounded-full border border-main flex items-center justify-center">
@@ -71,9 +71,9 @@ export default function Product() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3">
+      <div ref={sliderRef} className="sm:grid sm:grid-cols-3">
         <div className="keen-slider col-span-2">
-          <div ref={sliderRef} className="flex items-center">
+          <div  className="flex items-center">
             {/* Your slides */}
 
             <div className="w-full h-full object-contain relative keen-slider__slide number-slide1">
@@ -146,7 +146,9 @@ export default function Product() {
 
         </div>
 
-        <div className=" flex flex-col justify-center w-full  py-5 col-span-1 1000:col-span-3 relative uppercase text-main">
+        <div className="flex flex-col justify-between w-full h-full py-5 col-span-1 1000:col-span-3 relative uppercase text-main">
+
+
           {/* first part */}
           <div>
             <div className="px-7 flex justify-between text-xs">
@@ -164,7 +166,7 @@ export default function Product() {
           </div>
 
           {/* second part */}
-          <div>
+          <div ref={sliderRef2}>
             <div className="px-10 py-3">
               <div>
                 <div className="border-b border-main py-2">
@@ -174,7 +176,7 @@ export default function Product() {
                   </p>
                 </div>
                 <div
-                  ref={sliderRef2}
+                 
                   className="second-slider flex space-between gap-x-3 pt-3"
                 >
                   <div className="second-slider__slide number-slide1 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">

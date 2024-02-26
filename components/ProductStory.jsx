@@ -3,7 +3,7 @@ import React from "react";
 
 function ProductStory() {
   return (
-    <div className="mx-4 sm:mx-10 my-32 py-10 sm:py-20 grid grid-cols-12 text-main">
+    <div className="mx-4 sm:mx-10 sm:my-32 py-10 sm:py-20 sm:grid grid-cols-12 text-main">
       <div className="col-span-5">
         <div className="flex flex-col space-y-5">
           <h4>Handcrafted for your tomorrows</h4>

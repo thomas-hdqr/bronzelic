@@ -6,7 +6,7 @@ function ProductDetails() {
   const [activeTab, setActiveTab] = useState("details");
 
   return (
-    <div className="grid grid-cols-12 text-main mx-4 sm:mx-10 my-32 py-10 sm:py-20">
+    <div className="sm:grid sm:grid-cols-12 text-main mx-4 sm:mx-10 my-32 py-10 sm:py-20">
       {/* first column */}
       <div className="col-span-5 pr-40">
       <div className="flex flex-col space-y-5">

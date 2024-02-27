@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
@@ -78,64 +77,51 @@ export default function Product() {
             {/* Your slides */}
 
             <div className="w-full h-full object-contain relative keen-slider__slide number-slide1">
-              <Image
+              <img
                 src="/Square_Solitaire_Emerald_Std_1.5mm_YG_Mirror_1.5ct.webp"
                 alt=""
                 width="1200"
                 height="960"
-                layout="fill"
-                objectFit="cover"
-               
               />
             </div>
             <div className="w-full relative keen-slider__slide number-slide2">
-              <Image
+              <img
                 src="/Square-Solitaire_04.jpg"
                 alt=""
                 width="1200"
                 height="960"
-                layout="fill"
-                objectFit="cover"
               />
             </div>
             <div className="w-full relative keen-slider__slide number-slide3">
-              <Image
+              <img
                 src="/Square-Solitaire_05.webp"
                 alt=""
                 width="1200"
                 height="960"
-                layout="fill"
-                objectFit="cover"
               />
             </div>
             <div className="w-full relative keen-slider__slide number-slide4">
-              <Image
+              <img
                 src="/Square-Solitaire_01.webp"
                 alt=""
                 width="1200"
                 height="960"
-                layout="fill"
-                objectFit="cover"
               />
             </div>
             <div className="w-full relative keen-slider__slide number-slide5">
-              <Image
+              <img
                 src="/Square-Solitaire_02.webp"
                 alt=""
                 width="1200"
                 height="960"
-                layout="fill"
-                objectFit="cover"
               />
             </div>
             <div className="w-full relative keen-slider__slide number-slide6">
-              <Image
+              <img
                 src="/Square-Solitaire_03.webp"
                 alt=""
                 width="1200"
                 height="960"
-                layout="fill"
-                objectFit="cover"
               />
             </div>
           </div>
@@ -194,31 +180,31 @@ export default function Product() {
                   className="second-slider flex space-between gap-x-3 pt-3"
                 >
                   <div className="second-slider__slide number-slide1 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Asscher.png" />
+                    <img alt="" src="/Diamond-Icon_Asscher.png" />
                   </div>
                   <div className="second-slider__slide number-slide2 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Cushion.png" />
+                    <img alt="" src="/Diamond-Icon_Cushion.png" />
                   </div>
                   <div className="second-slider__slide number-slide3 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Emerald.png" />
+                    <img alt="" src="/Diamond-Icon_Emerald.png" />
                   </div>
                   <div className="second-slider__slide number-slide3 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Marquise.png" />
+                    <img alt="" src="/Diamond-Icon_Marquise.png" />
                   </div>
                   <div className="second-slider__slide number-slide3 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Oval.png" />
+                    <img alt="" src="/Diamond-Icon_Oval.png" />
                   </div>
                   <div className="second-slider__slide number-slide3 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Pear.png" />
+                    <img alt="" src="/Diamond-Icon_Pear.png" />
                   </div>
                   <div className="second-slider__slide number-slide3 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Princess.png" />
+                    <img alt="" src="/Diamond-Icon_Princess.png" />
                   </div>
                   <div className="second-slider__slide number-slide3 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Radiant.png" />
+                    <img alt="" src="/Diamond-Icon_Radiant.png" />
                   </div>
                   <div className="second-slider__slide number-slide3 w-8 h-8 rounded-lg duration-300 transition-colors border-main border flex items-center justify-center hover:border-opacity-100 border-opacity-0 cursor-pointer">
-                    <Image alt="" src="/Diamond-Icon_Round.png" />
+                    <img alt="" src="/Diamond-Icon_Round.png" />
                   </div>
                 </div>
               </div>

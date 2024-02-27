@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -70,8 +70,7 @@ function CarrouselMain() {
                 <Image
                   src={image2}
                   alt="engagement rings"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   className="object-cover py-4"
                 />
               </div>
@@ -98,8 +97,7 @@ function CarrouselMain() {
                 <Image
                   src={image3}
                   alt="engagement rings"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   className="object-cover py-4"
                 />
               </div>

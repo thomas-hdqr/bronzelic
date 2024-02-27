@@ -1,9 +1,9 @@
 
-import Header from "../../components/Header.jsx";
-import Subscribe from "../../components/Subscribe.jsx";
-import Footer from "../../components/Footer.jsx";
-import Marquee from "../../components/Marquee.jsx";
-import CollectionItem from "../../components/CollectionItem.jsx";
+import Header from "../../components/header.jsx";
+import Subscribe from "../../components/subscribe.jsx";
+import Footer from "../../components/footer.jsx";
+import Marquee from "../../components/marquee.jsx";
+import CollectionItem from "../../components/collectionitem.jsx";
 
 export default function Categorie() {
   const items = [

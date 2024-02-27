@@ -2,15 +2,15 @@
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import Header from "../../components/Header.jsx";
-import Subscribe from "../../components/Subscribe.jsx";
-import Footer from "../../components/Footer.jsx";
-import Marquee from "../../components/Marquee.jsx";
-import BookAppointment from "../../components/BookAppointment.jsx";
+import Header from "../../components/header.jsx";
+import Subscribe from "../../components/subscribe.jsx";
+import Footer from "../../components/footer.jsx";
+import Marquee from "../../components/marquee.jsx";
+import BookAppointment from "../../components/bookappointment.jsx";
 import { StarIcon } from "@heroicons/react/24/solid";
-import ProductDetails from "../../components/ProductDetails.jsx";
-import ProductStory from "../../components/ProductStory.jsx";
-import ProductPairing from "../../components/ProductPairing.jsx";
+import ProductDetails from "../../components/productdetails.jsx";
+import ProductStory from "../../components/productstory.jsx";
+import ProductPairing from "../../components/productpairing.jsx";
 
 
 export default function Product() {

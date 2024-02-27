@@ -2,4 +2,4 @@ Fonts:
 Heading = Syne
 Texts= Inter
 
-et
+etc
